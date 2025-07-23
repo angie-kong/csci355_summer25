@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angela Kong's Assignment #5 Webpage</title>
+    <!-- Style / CSS code start -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: whitesmoke;
+            color: black;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: whitesmoke;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        #passwordInput {
+            padding: 8px;
+            width: 200px;
+        }
+        .valid {
+            border: 2px solid darkgreen;
+        }
+        .invalid {
+            border: 2px solid darkred;
+        }
+        .contact-form {
+            margin-top: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: dimgray;
+        }
+    </style>
+    <!-- Style / CSS code end -->
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">Course</button>
+            <div class="dropdown-content">
+                <a href="https://www.pearson.com/us/higher-education/product/Kurose-Computer-Networking-A-Top-Down-Approach-7th-Edition/9780133594140.html" target="_blank">Kurose and Ross</a>
+                <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+                <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">GeeksforGeeks</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Browser</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showBrowserInfo()">Browser Info</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Configuration</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showPasswordForm()">Password</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">About</button>
+            <div class="dropdown-content">
+                <a href="#" onclick="showAbout()">Developer Description</a>
+                <a href="#" onclick="showContactForm()">Contact Me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="mainContent">
+        <h1>Welcome to My Assignment #5 Webpage !</h1>
+        <p>Select an option from the menu above to explore.</p>
+    </div>
+
+    <!-- JavaScript code start -->
+    <script>
+        function showBrowserInfo() {
+            const content = document.getElementById('mainContent');
+            content.innerHTML = `
+                <h2>Browser Information</h2>
+                <p><strong>Navigator.appName:</strong> ${navigator.appName}</p>
+                <p><strong>Navigator.product:</strong> ${navigator.product}</p>
+                <p><strong>Navigator.appVersion:</strong> ${navigator.appVersion}</p>
+                <p><strong>Navigator.userAgent:</strong> ${navigator.userAgent}</p>
+                <p><strong>Navigator.platform:</strong> ${navigator.platform}</p>
+                <p><strong>Navigator.language:</strong> ${navigator.language}</p>
+                <p><strong>Window.innerHeight:</strong> ${window.innerHeight}</p>
+                <p><strong>Window.innerWidth:</strong> ${window.innerWidth}</p>
+                <p><strong>Screen.width:</strong> ${screen.width}</p>
+                <p><strong>Screen.height:</strong> ${screen.height}</p>
+                <p><strong>Screen.availWidth:</strong> ${screen.availWidth}</p>
+                <p><strong>Screen.availHeight:</strong> ${screen.availHeight}</p>
+                <p><strong>Screen.colorDepth:</strong> ${screen.colorDepth}</p>
+                <p><strong>Screen.pixelDepth:</strong> ${screen.pixelDepth}</p>
+                <p><strong>Location.href:</strong> ${location.href}</p>
+                <p><strong>Location.hostname:</strong> ${location.hostname}</p>
+                <p><strong>Location.pathname:</strong> ${location.pathname}</p>
+                <p><strong>Location.protocol:</strong> ${location.protocol}</p>
+            `;
+        }
+
+        function showPasswordForm() {
+            const content = document.getElementById('mainContent');
+            content.innerHTML = `
+                <h2>Password Validation</h2>
+                <p>Enter a password (at least 10 characters, including at least one letter, one digit, and one special symbol).</p>
+                <input type="text" id="passwordInput" oninput="validatePassword()" placeholder="Enter password">
+                <p id="passwordMessage"></p>
+            `;
+        }
+
+        function validatePassword() {
+            const password = document.getElementById('passwordInput').value;
+            const message = document.getElementById('passwordMessage');
+            const input = document.getElementById('passwordInput');
+            const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{10,}$/;
+
+            if (regex.test(password)) {
+                input.classList.remove('invalid');
+                input.classList.add('valid');
+                message.textContent = 'Password is valid!';
+                message.style.color = 'green';
+            } else {
+                input.classList.remove('valid');
+                input.classList.add('invalid');
+                message.textContent = 'Password must be at least 10 characters, including one letter, one digit, and one special symbol.';
+                message.style.color = 'red';
+            }
+        }
+
+        function showAbout() {
+            const content = document.getElementById('mainContent');
+            content.innerHTML = `
+                <h2>About the Developer</h2>
+                <p>Name: Angela Kong</p>
+                <p>Bio: I am an undergraduate Computer Science student learning web development. This page is part of an assignment to demonstrate my skills in HTML, CSS, and JavaScript.</p>
+                <!-- Code to add image below -->
+                <!-- <img src="path/to/your-photo.jpg" alt="Developer Photo" style="max-width: 200px;"> -->
+            `;
+        }
+
+        function showContactForm() {
+            const content = document.getElementById('mainContent');
+            content.innerHTML = `
+                <h2>Contact Me</h2>
+                <div class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <button onclick="alert('Form submitted! (Note: This is a demo, no actual email is sent.)')">Send</button>
+                </div>
+            `;
+        }
+    </script>
+<!-- JavaScript code end -->
+</body>
+</html>
