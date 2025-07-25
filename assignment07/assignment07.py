@@ -156,7 +156,7 @@ def main():
     types = ["S"] * len(headers)
     alignments = ["l"] * len(headers)
     title = "My Routing Table<br>Angela Kong"
-    ou.write_html_file("Assignment07.html", title, headers, types, alignments, data, True)
+    ou.write_html_file("assignment07.html", title, headers, types, alignments, data, True)
 
 
 if __name__ == "__main__":
