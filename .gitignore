@@ -1,0 +1,28 @@
+# Ignore compiled files
+*.class  # Java compiled files
+*.pyc   # Python compiled files
+__pycache__/  # Python cache directories
+
+# Ignore temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore build outputs
+node_modules/  # Node.js dependencies
+dist/
+build/
+
+# Ignore OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore large or sensitive files
+*.zip
+*.tar.gz
+*.pdf  # If you don’t want to commit PDFs
+*.docx  # If you don’t want to commit Word documents
+
+# Ignore sensitive data
+.env  # Environment variable files
+secrets.txt
