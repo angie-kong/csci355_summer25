@@ -1,0 +1,2264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<title>COVID_data</title>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/United States" target="_blank">United States</a>
+</Country>
+<Continent>North America</Continent>
+<Population>347275807</Population>
+<Cases>111820082</Cases>
+<%Cases>32.2</%Cases>
+<Deaths>1219487</Deaths>
+<%Deaths>0.35</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/India" target="_blank">India</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>1463865525</Population>
+<Cases>45035393</Cases>
+<%Cases>3.08</%Cases>
+<Deaths>533570</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>66650804</Population>
+<Cases>40138560</Cases>
+<%Cases>60.22</%Cases>
+<Deaths>167642</Deaths>
+<%Deaths>0.25</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Germany" target="_blank">Germany</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>84075075</Population>
+<Cases>38828995</Cases>
+<%Cases>46.18</%Cases>
+<Deaths>183027</Deaths>
+<%Deaths>0.22</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Brazil" target="_blank">Brazil</a>
+</Country>
+<Continent>South America</Continent>
+<Population>212812405</Population>
+<Cases>38743918</Cases>
+<%Cases>18.21</%Cases>
+<Deaths>711380</Deaths>
+<%Deaths>0.33</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/South Korea" target="_blank">South Korea</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>51667029</Population>
+<Cases>34571873</Cases>
+<%Cases>66.91</%Cases>
+<Deaths>35934</Deaths>
+<%Deaths>0.07</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Japan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>123103479</Population>
+<Cases>33804284</Cases>
+<%Cases>27.46</%Cases>
+<Deaths>74707</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Italy" target="_blank">Italy</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>59146260</Population>
+<Cases>26723249</Cases>
+<%Cases>45.18</%Cases>
+<Deaths>196487</Deaths>
+<%Deaths>0.33</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/United Kingdom" target="_blank">United Kingdom</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>69551332</Population>
+<Cases>24910387</Cases>
+<%Cases>35.82</%Cases>
+<Deaths>232112</Deaths>
+<%Deaths>0.33</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Russia" target="_blank">Russia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>143997393</Population>
+<Cases>24124215</Cases>
+<%Cases>16.75</%Cases>
+<Deaths>402756</Deaths>
+<%Deaths>0.28</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Turkey" target="_blank">Turkey</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>87685426</Population>
+<Cases>17232066</Cases>
+<%Cases>19.65</%Cases>
+<Deaths>102174</Deaths>
+<%Deaths>0.12</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Spain" target="_blank">Spain</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>47889958</Population>
+<Cases>13914811</Cases>
+<%Cases>29.06</%Cases>
+<Deaths>121760</Deaths>
+<%Deaths>0.25</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Australia" target="_blank">Australia</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>26974026</Population>
+<Cases>11853144</Cases>
+<%Cases>43.94</%Cases>
+<Deaths>24414</Deaths>
+<%Deaths>0.09</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Vietnam" target="_blank">Vietnam</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>101598527</Population>
+<Cases>11625195</Cases>
+<%Cases>11.44</%Cases>
+<Deaths>43206</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Taiwan" target="_blank">Taiwan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>23112793</Population>
+<Cases>10241523</Cases>
+<%Cases>44.31</%Cases>
+<Deaths>19005</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Argentina" target="_blank">Argentina</a>
+</Country>
+<Continent>South America</Continent>
+<Population>45851378</Population>
+<Cases>10128845</Cases>
+<%Cases>22.09</%Cases>
+<Deaths>130841</Deaths>
+<%Deaths>0.29</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Netherlands</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>18346819</Population>
+<Cases>8635786</Cases>
+<%Cases>47.07</%Cases>
+<Deaths>22992</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mexico" target="_blank">Mexico</a>
+</Country>
+<Continent>North America</Continent>
+<Population>131946900</Population>
+<Cases>7702809</Cases>
+<%Cases>5.84</%Cases>
+<Deaths>334958</Deaths>
+<%Deaths>0.25</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Iran" target="_blank">Iran</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>92417681</Population>
+<Cases>7627186</Cases>
+<%Cases>8.25</%Cases>
+<Deaths>146811</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Indonesia" target="_blank">Indonesia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>285721236</Population>
+<Cases>6829221</Cases>
+<%Cases>2.39</%Cases>
+<Deaths>162063</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Poland" target="_blank">Poland</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>38140910</Population>
+<Cases>6661991</Cases>
+<%Cases>17.47</%Cases>
+<Deaths>120598</Deaths>
+<%Deaths>0.32</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Colombia" target="_blank">Colombia</a>
+</Country>
+<Continent>South America</Continent>
+<Population>53425635</Population>
+<Cases>6400173</Cases>
+<%Cases>11.98</%Cases>
+<Deaths>143200</Deaths>
+<%Deaths>0.27</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Greece" target="_blank">Greece</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>9938844</Population>
+<Cases>6101379</Cases>
+<%Cases>61.39</%Cases>
+<Deaths>37869</Deaths>
+<%Deaths>0.38</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Austria" target="_blank">Austria</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>9113574</Population>
+<Cases>6081287</Cases>
+<%Cases>66.73</%Cases>
+<Deaths>22542</Deaths>
+<%Deaths>0.25</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Portugal" target="_blank">Portugal</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>10411834</Population>
+<Cases>5643062</Cases>
+<%Cases>54.2</%Cases>
+<Deaths>28126</Deaths>
+<%Deaths>0.27</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Ukraine" target="_blank">Ukraine</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>38980376</Population>
+<Cases>5557995</Cases>
+<%Cases>14.26</%Cases>
+<Deaths>112418</Deaths>
+<%Deaths>0.29</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Chile" target="_blank">Chile</a>
+</Country>
+<Continent>South America</Continent>
+<Population>19859921</Population>
+<Cases>5384853</Cases>
+<%Cases>27.11</%Cases>
+<Deaths>64497</Deaths>
+<%Deaths>0.32</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank">Malaysia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>35977838</Population>
+<Cases>5278406</Cases>
+<%Cases>14.67</%Cases>
+<Deaths>37348</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Canada" target="_blank">Canada</a>
+</Country>
+<Continent>North America</Continent>
+<Population>40126723</Population>
+<Cases>4946090</Cases>
+<%Cases>12.33</%Cases>
+<Deaths>59034</Deaths>
+<%Deaths>0.15</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Belgium" target="_blank">Belgium</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>11758603</Population>
+<Cases>4861695</Cases>
+<%Cases>41.35</%Cases>
+<Deaths>34376</Deaths>
+<%Deaths>0.29</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Israel" target="_blank">Israel</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>9517181</Population>
+<Cases>4841772</Cases>
+<%Cases>50.87</%Cases>
+<Deaths>12707</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/North Korea" target="_blank">North Korea</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>26571036</Population>
+<Cases>4772813</Cases>
+<%Cases>17.96</%Cases>
+<Deaths>74</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>71619863</Population>
+<Cases>4770149</Cases>
+<%Cases>6.66</%Cases>
+<Deaths>34586</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Czech Republic (Czechia)" target="_blank">Czech Republic (Czechia)</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>10609239</Population>
+<Cases>4759041</Cases>
+<%Cases>44.86</%Cases>
+<Deaths>43517</Deaths>
+<%Deaths>0.41</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Peru" target="_blank">Peru</a>
+</Country>
+<Continent>South America</Continent>
+<Population>34576665</Population>
+<Cases>4572667</Cases>
+<%Cases>13.22</%Cases>
+<Deaths>222161</Deaths>
+<%Deaths>0.64</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Switzerland" target="_blank">Switzerland</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>8967407</Population>
+<Cases>4453053</Cases>
+<%Cases>49.66</%Cases>
+<Deaths>14452</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Philippines" target="_blank">Philippines</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>116786962</Population>
+<Cases>4140383</Cases>
+<%Cases>3.55</%Cases>
+<Deaths>66864</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/South Africa" target="_blank">South Africa</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>64747319</Population>
+<Cases>4076463</Cases>
+<%Cases>6.3</%Cases>
+<Deaths>102595</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Romania" target="_blank">Romania</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>18908650</Population>
+<Cases>3529735</Cases>
+<%Cases>18.67</%Cases>
+<Deaths>68929</Deaths>
+<%Deaths>0.36</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Denmark" target="_blank">Denmark</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>6002507</Population>
+<Cases>3183756</Cases>
+<%Cases>53.04</%Cases>
+<Deaths>8814</Deaths>
+<%Deaths>0.15</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Singapore</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>5870750</Population>
+<Cases>3006155</Cases>
+<%Cases>51.21</%Cases>
+<Deaths>2024</Deaths>
+<%Deaths>0.03</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Hong Kong" target="_blank">Hong Kong</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>7396076</Population>
+<Cases>2937609</Cases>
+<%Cases>39.72</%Cases>
+<Deaths>14924</Deaths>
+<%Deaths>0.2</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Sweden" target="_blank">Sweden</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>10656633</Population>
+<Cases>2754129</Cases>
+<%Cases>25.84</%Cases>
+<Deaths>27407</Deaths>
+<%Deaths>0.26</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/New Zealand" target="_blank">New Zealand</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>5251899</Population>
+<Cases>2621111</Cases>
+<%Cases>49.91</%Cases>
+<Deaths>5697</Deaths>
+<%Deaths>0.11</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Serbia" target="_blank">Serbia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>6689039</Population>
+<Cases>2615054</Cases>
+<%Cases>39.09</%Cases>
+<Deaths>18057</Deaths>
+<%Deaths>0.27</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Iraq" target="_blank">Iraq</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>47020774</Population>
+<Cases>2465545</Cases>
+<%Cases>5.24</%Cases>
+<Deaths>25375</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Hungary" target="_blank">Hungary</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>9632287</Population>
+<Cases>2230232</Cases>
+<%Cases>23.15</%Cases>
+<Deaths>49048</Deaths>
+<%Deaths>0.51</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bangladesh" target="_blank">Bangladesh</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>175686899</Population>
+<Cases>2049377</Cases>
+<%Cases>1.17</%Cases>
+<Deaths>29493</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Slovakia" target="_blank">Slovakia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>5474881</Population>
+<Cases>1877605</Cases>
+<%Cases>34.29</%Cases>
+<Deaths>21224</Deaths>
+<%Deaths>0.39</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Georgia" target="_blank">Georgia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>3806671</Population>
+<Cases>1861665</Cases>
+<%Cases>48.91</%Cases>
+<Deaths>17132</Deaths>
+<%Deaths>0.45</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Jordan" target="_blank">Jordan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>11520684</Population>
+<Cases>1746997</Cases>
+<%Cases>15.16</%Cases>
+<Deaths>14122</Deaths>
+<%Deaths>0.12</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Ireland" target="_blank">Ireland</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>5308039</Population>
+<Cases>1734582</Cases>
+<%Cases>32.68</%Cases>
+<Deaths>9491</Deaths>
+<%Deaths>0.18</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Pakistan" target="_blank">Pakistan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>255219554</Population>
+<Cases>1581936</Cases>
+<%Cases>0.62</%Cases>
+<Deaths>30664</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Finland" target="_blank">Finland</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>5623329</Population>
+<Cases>1516117</Cases>
+<%Cases>26.96</%Cases>
+<Deaths>11958</Deaths>
+<%Deaths>0.21</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Norway" target="_blank">Norway</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>5623071</Population>
+<Cases>1509732</Cases>
+<%Cases>26.85</%Cases>
+<Deaths>6638</Deaths>
+<%Deaths>0.12</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Kazakhstan" target="_blank">Kazakhstan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>20843754</Population>
+<Cases>1411831</Cases>
+<%Cases>6.77</%Cases>
+<Deaths>13848</Deaths>
+<%Deaths>0.07</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Lithuania" target="_blank">Lithuania</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>2830144</Population>
+<Cases>1397806</Cases>
+<%Cases>49.39</%Cases>
+<Deaths>9897</Deaths>
+<%Deaths>0.35</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Slovenia" target="_blank">Slovenia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>2117072</Population>
+<Cases>1356546</Cases>
+<%Cases>64.08</%Cases>
+<Deaths>7100</Deaths>
+<%Deaths>0.34</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bulgaria" target="_blank">Bulgaria</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>6714560</Population>
+<Cases>1339851</Cases>
+<%Cases>19.95</%Cases>
+<Deaths>38748</Deaths>
+<%Deaths>0.58</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Croatia" target="_blank">Croatia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>3848160</Population>
+<Cases>1309728</Cases>
+<%Cases>34.04</%Cases>
+<Deaths>18687</Deaths>
+<%Deaths>0.49</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Guatemala" target="_blank">Guatemala</a>
+</Country>
+<Continent>North America</Continent>
+<Population>18687881</Population>
+<Cases>1291293</Cases>
+<%Cases>6.91</%Cases>
+<Deaths>20289</Deaths>
+<%Deaths>0.11</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Morocco" target="_blank">Morocco</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>38430770</Population>
+<Cases>1278992</Cases>
+<%Cases>3.33</%Cases>
+<Deaths>16303</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Lebanon" target="_blank">Lebanon</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>5849421</Population>
+<Cases>1243838</Cases>
+<%Cases>21.26</%Cases>
+<Deaths>10952</Deaths>
+<%Deaths>0.19</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Costa Rica" target="_blank">Costa Rica</a>
+</Country>
+<Continent>North America</Continent>
+<Population>5152950</Population>
+<Cases>1238883</Cases>
+<%Cases>24.04</%Cases>
+<Deaths>9428</Deaths>
+<%Deaths>0.18</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bolivia" target="_blank">Bolivia</a>
+</Country>
+<Continent>South America</Continent>
+<Population>12581843</Population>
+<Cases>1212131</Cases>
+<%Cases>9.63</%Cases>
+<Deaths>22407</Deaths>
+<%Deaths>0.18</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Tunisia" target="_blank">Tunisia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>12348573</Population>
+<Cases>1153361</Cases>
+<%Cases>9.34</%Cases>
+<Deaths>29423</Deaths>
+<%Deaths>0.24</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cuba" target="_blank">Cuba</a>
+</Country>
+<Continent>North America</Continent>
+<Population>10937203</Population>
+<Cases>1115251</Cases>
+<%Cases>10.2</%Cases>
+<Deaths>8530</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Ecuador" target="_blank">Ecuador</a>
+</Country>
+<Continent>South America</Continent>
+<Population>18289896</Population>
+<Cases>1070188</Cases>
+<%Cases>5.85</%Cases>
+<Deaths>36043</Deaths>
+<%Deaths>0.2</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/United Arab Emirates" target="_blank">United Arab Emirates</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>11346000</Population>
+<Cases>1067030</Cases>
+<%Cases>9.4</%Cases>
+<Deaths>2349</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Panama" target="_blank">Panama</a>
+</Country>
+<Continent>North America</Continent>
+<Population>4571189</Population>
+<Cases>1059893</Cases>
+<%Cases>23.19</%Cases>
+<Deaths>8727</Deaths>
+<%Deaths>0.19</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Uruguay" target="_blank">Uruguay</a>
+</Country>
+<Continent>South America</Continent>
+<Population>3384688</Population>
+<Cases>1041111</Cases>
+<%Cases>30.76</%Cases>
+<Deaths>7664</Deaths>
+<%Deaths>0.23</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mongolia" target="_blank">Mongolia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>3517100</Population>
+<Cases>1011496</Cases>
+<%Cases>28.76</%Cases>
+<Deaths>2284</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Nepal" target="_blank">Nepal</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>29618118</Population>
+<Cases>1003450</Cases>
+<%Cases>3.39</%Cases>
+<Deaths>12031</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Belarus" target="_blank">Belarus</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>8997603</Population>
+<Cases>994037</Cases>
+<%Cases>11.05</%Cases>
+<Deaths>7118</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Latvia" target="_blank">Latvia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>1853559</Population>
+<Cases>982505</Cases>
+<%Cases>53.01</%Cases>
+<Deaths>6715</Deaths>
+<%Deaths>0.36</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Saudi Arabia" target="_blank">Saudi Arabia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>34566328</Population>
+<Cases>841469</Cases>
+<%Cases>2.43</%Cases>
+<Deaths>9646</Deaths>
+<%Deaths>0.03</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Paraguay" target="_blank">Paraguay</a>
+</Country>
+<Continent>South America</Continent>
+<Population>7013078</Population>
+<Cases>837602</Cases>
+<%Cases>11.94</%Cases>
+<Deaths>20155</Deaths>
+<%Deaths>0.29</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Azerbaijan" target="_blank">Azerbaijan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>10397713</Population>
+<Cases>835234</Cases>
+<%Cases>8.03</%Cases>
+<Deaths>10400</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bahrain" target="_blank">Bahrain</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>1643332</Population>
+<Cases>729549</Cases>
+<%Cases>44.39</%Cases>
+<Deaths>1574</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cyprus" target="_blank">Cyprus</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>1370754</Population>
+<Cases>681110</Cases>
+<%Cases>49.69</%Cases>
+<Deaths>1365</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Dominican Republic" target="_blank">Dominican Republic</a>
+</Country>
+<Continent>North America</Continent>
+<Population>11520487</Population>
+<Cases>675890</Cases>
+<%Cases>5.87</%Cases>
+<Deaths>4384</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Sri Lanka" target="_blank">Sri Lanka</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>23229470</Population>
+<Cases>672754</Cases>
+<%Cases>2.9</%Cases>
+<Deaths>16897</Deaths>
+<%Deaths>0.07</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Kuwait" target="_blank">Kuwait</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>5026078</Population>
+<Cases>667158</Cases>
+<%Cases>13.27</%Cases>
+<Deaths>2570</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Myanmar" target="_blank">Myanmar</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>54850648</Population>
+<Cases>641873</Cases>
+<%Cases>1.17</%Cases>
+<Deaths>19495</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Moldova" target="_blank">Moldova</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>2996106</Population>
+<Cases>635145</Cases>
+<%Cases>21.2</%Cases>
+<Deaths>12218</Deaths>
+<%Deaths>0.41</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Estonia" target="_blank">Estonia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>1344232</Population>
+<Cases>628070</Cases>
+<%Cases>46.72</%Cases>
+<Deaths>3001</Deaths>
+<%Deaths>0.22</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/State of Palestine" target="_blank">State of Palestine</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>5589623</Population>
+<Cases>621008</Cases>
+<%Cases>11.11</%Cases>
+<Deaths>5404</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Venezuela" target="_blank">Venezuela</a>
+</Country>
+<Continent>South America</Continent>
+<Population>28516896</Population>
+<Cases>552695</Cases>
+<%Cases>1.94</%Cases>
+<Deaths>5856</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Egypt" target="_blank">Egypt</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>118365995</Population>
+<Cases>516023</Cases>
+<%Cases>0.44</%Cases>
+<Deaths>24613</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Qatar" target="_blank">Qatar</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>3115889</Population>
+<Cases>514524</Cases>
+<%Cases>16.51</%Cases>
+<Deaths>690</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Libya" target="_blank">Libya</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>7458555</Population>
+<Cases>507274</Cases>
+<%Cases>6.8</%Cases>
+<Deaths>6437</Deaths>
+<%Deaths>0.09</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/China" target="_blank">China</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>1416096094</Population>
+<Cases>503302</Cases>
+<%Cases>0.04</%Cases>
+<Deaths>5272</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Ethiopia" target="_blank">Ethiopia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>135472051</Population>
+<Cases>501157</Cases>
+<%Cases>0.37</%Cases>
+<Deaths>7574</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Réunion" target="_blank">Réunion</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>882405</Population>
+<Cases>494595</Cases>
+<%Cases>56.05</%Cases>
+<Deaths>921</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Honduras" target="_blank">Honduras</a>
+</Country>
+<Continent>North America</Continent>
+<Population>11005850</Population>
+<Cases>474590</Cases>
+<%Cases>4.31</%Cases>
+<Deaths>11165</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Armenia" target="_blank">Armenia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>2952365</Population>
+<Cases>451831</Cases>
+<%Cases>15.3</%Cases>
+<Deaths>8777</Deaths>
+<%Deaths>0.3</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bosnia and Herzegovina" target="_blank">Bosnia and Herzegovina</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>3140095</Population>
+<Cases>403615</Cases>
+<%Cases>12.85</%Cases>
+<Deaths>16388</Deaths>
+<%Deaths>0.52</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Oman" target="_blank">Oman</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>5494691</Population>
+<Cases>399449</Cases>
+<%Cases>7.27</%Cases>
+<Deaths>4628</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank">Luxembourg</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>680453</Population>
+<Cases>391232</Cases>
+<%Cases>57.5</%Cases>
+<Deaths>1232</Deaths>
+<%Deaths>0.18</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/North Macedonia" target="_blank">North Macedonia</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>1813791</Population>
+<Cases>350567</Cases>
+<%Cases>19.33</%Cases>
+<Deaths>9976</Deaths>
+<%Deaths>0.55</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Zambia" target="_blank">Zambia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>21913874</Population>
+<Cases>349304</Cases>
+<%Cases>1.59</%Cases>
+<Deaths>4069</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Kenya" target="_blank">Kenya</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>57532493</Population>
+<Cases>344130</Cases>
+<%Cases>0.6</%Cases>
+<Deaths>5689</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Albania" target="_blank">Albania</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>2771508</Population>
+<Cases>334863</Cases>
+<%Cases>12.08</%Cases>
+<Deaths>3605</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Botswana" target="_blank">Botswana</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>2562122</Population>
+<Cases>330638</Cases>
+<%Cases>12.9</%Cases>
+<Deaths>2801</Deaths>
+<%Deaths>0.11</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Montenegro" target="_blank">Montenegro</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>632729</Population>
+<Cases>296542</Cases>
+<%Cases>46.87</%Cases>
+<Deaths>2846</Deaths>
+<%Deaths>0.45</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Algeria" target="_blank">Algeria</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>47435312</Population>
+<Cases>272010</Cases>
+<%Cases>0.57</%Cases>
+<Deaths>6881</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Nigeria" target="_blank">Nigeria</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>237527782</Population>
+<Cases>267188</Cases>
+<%Cases>0.11</%Cases>
+<Deaths>3155</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Zimbabwe" target="_blank">Zimbabwe</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>16950795</Population>
+<Cases>266359</Cases>
+<%Cases>1.57</%Cases>
+<Deaths>5740</Deaths>
+<%Deaths>0.03</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Uzbekistan" target="_blank">Uzbekistan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>37053428</Population>
+<Cases>253662</Cases>
+<%Cases>0.68</%Cases>
+<Deaths>1637</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank">Afghanistan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>43844111</Population>
+<Cases>234174</Cases>
+<%Cases>0.53</%Cases>
+<Deaths>7996</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mozambique" target="_blank">Mozambique</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>35631653</Population>
+<Cases>233731</Cases>
+<%Cases>0.66</%Cases>
+<Deaths>2250</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Martinique" target="_blank">Martinique</a>
+</Country>
+<Continent>North America</Continent>
+<Population>340439</Population>
+<Cases>230354</Cases>
+<%Cases>67.66</%Cases>
+<Deaths>1102</Deaths>
+<%Deaths>0.32</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Laos" target="_blank">Laos</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>7873046</Population>
+<Cases>218970</Cases>
+<%Cases>2.78</%Cases>
+<Deaths>758</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Iceland" target="_blank">Iceland</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>398266</Population>
+<Cases>209906</Cases>
+<%Cases>52.7</%Cases>
+<Deaths>229</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Kyrgyzstan" target="_blank">Kyrgyzstan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>7295034</Population>
+<Cases>206897</Cases>
+<%Cases>2.84</%Cases>
+<Deaths>2991</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Guadeloupe" target="_blank">Guadeloupe</a>
+</Country>
+<Continent>North America</Continent>
+<Population>373791</Population>
+<Cases>203235</Cases>
+<%Cases>54.37</%Cases>
+<Deaths>1021</Deaths>
+<%Deaths>0.27</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/El Salvador" target="_blank">El Salvador</a>
+</Country>
+<Continent>North America</Continent>
+<Population>6365503</Population>
+<Cases>201855</Cases>
+<%Cases>3.17</%Cases>
+<Deaths>4230</Deaths>
+<%Deaths>0.07</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Trinidad and Tobago" target="_blank">Trinidad and Tobago</a>
+</Country>
+<Continent>North America</Continent>
+<Population>1511155</Population>
+<Cases>191496</Cases>
+<%Cases>12.67</%Cases>
+<Deaths>4390</Deaths>
+<%Deaths>0.29</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Maldives" target="_blank">Maldives</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>529676</Population>
+<Cases>186694</Cases>
+<%Cases>35.25</%Cases>
+<Deaths>316</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Namibia" target="_blank">Namibia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>3092816</Population>
+<Cases>172389</Cases>
+<%Cases>5.57</%Cases>
+<Deaths>4106</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Uganda" target="_blank">Uganda</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>51384894</Population>
+<Cases>172149</Cases>
+<%Cases>0.34</%Cases>
+<Deaths>3632</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Ghana" target="_blank">Ghana</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>35064272</Population>
+<Cases>171889</Cases>
+<%Cases>0.49</%Cases>
+<Deaths>1462</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Jamaica" target="_blank">Jamaica</a>
+</Country>
+<Continent>North America</Continent>
+<Population>2837077</Population>
+<Cases>156869</Cases>
+<%Cases>5.53</%Cases>
+<Deaths>3756</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cambodia" target="_blank">Cambodia</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>17847982</Population>
+<Cases>139103</Cases>
+<%Cases>0.78</%Cases>
+<Deaths>3056</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Rwanda" target="_blank">Rwanda</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>14569341</Population>
+<Cases>133518</Cases>
+<%Cases>0.92</%Cases>
+<Deaths>1468</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cameroon" target="_blank">Cameroon</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>29879337</Population>
+<Cases>125379</Cases>
+<%Cases>0.42</%Cases>
+<Deaths>1974</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Malta" target="_blank">Malta</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>545405</Population>
+<Cases>121420</Cases>
+<%Cases>22.26</%Cases>
+<Deaths>885</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Barbados" target="_blank">Barbados</a>
+</Country>
+<Continent>North America</Continent>
+<Population>282623</Population>
+<Cases>110578</Cases>
+<%Cases>39.13</%Cases>
+<Deaths>648</Deaths>
+<%Deaths>0.23</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Angola" target="_blank">Angola</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>39040039</Population>
+<Cases>107327</Cases>
+<%Cases>0.27</%Cases>
+<Deaths>1937</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/DR Congo" target="_blank">DR Congo</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>112832473</Population>
+<Cases>99338</Cases>
+<%Cases>0.09</%Cases>
+<Deaths>1468</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/French Guiana" target="_blank">French Guiana</a>
+</Country>
+<Continent>South America</Continent>
+<Population>313666</Population>
+<Cases>98041</Cases>
+<%Cases>31.26</%Cases>
+<Deaths>420</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Malawi" target="_blank">Malawi</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>22216120</Population>
+<Cases>89535</Cases>
+<%Cases>0.4</%Cases>
+<Deaths>2686</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Senegal" target="_blank">Senegal</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>18931966</Population>
+<Cases>89053</Cases>
+<%Cases>0.47</%Cases>
+<Deaths>1971</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Côte d'Ivoire" target="_blank">Côte d'Ivoire</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>32711547</Population>
+<Cases>88384</Cases>
+<%Cases>0.27</%Cases>
+<Deaths>835</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Suriname" target="_blank">Suriname</a>
+</Country>
+<Continent>South America</Continent>
+<Population>639850</Population>
+<Cases>82588</Cases>
+<%Cases>12.91</%Cases>
+<Deaths>1408</Deaths>
+<%Deaths>0.22</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/New Caledonia" target="_blank">New Caledonia</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>295333</Population>
+<Cases>80064</Cases>
+<%Cases>27.11</%Cases>
+<Deaths>314</Deaths>
+<%Deaths>0.11</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/French Polynesia" target="_blank">French Polynesia</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>282465</Population>
+<Cases>79254</Cases>
+<%Cases>28.06</%Cases>
+<Deaths>650</Deaths>
+<%Deaths>0.23</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Eswatini" target="_blank">Eswatini</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>1256174</Population>
+<Cases>75191</Cases>
+<%Cases>5.99</%Cases>
+<Deaths>1427</Deaths>
+<%Deaths>0.11</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Guyana" target="_blank">Guyana</a>
+</Country>
+<Continent>South America</Continent>
+<Population>835986</Population>
+<Cases>74137</Cases>
+<%Cases>8.87</%Cases>
+<Deaths>1300</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Belize" target="_blank">Belize</a>
+</Country>
+<Continent>North America</Continent>
+<Population>422924</Population>
+<Cases>71409</Cases>
+<%Cases>16.88</%Cases>
+<Deaths>688</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Fiji" target="_blank">Fiji</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>933154</Population>
+<Cases>69117</Cases>
+<%Cases>7.41</%Cases>
+<Deaths>885</Deaths>
+<%Deaths>0.09</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Madagascar" target="_blank">Madagascar</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>32740678</Population>
+<Cases>68486</Cases>
+<%Cases>0.21</%Cases>
+<Deaths>1426</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cabo Verde" target="_blank">Cabo Verde</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>527326</Population>
+<Cases>64477</Cases>
+<%Cases>12.23</%Cases>
+<Deaths>417</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Sudan" target="_blank">Sudan</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>51662147</Population>
+<Cases>63993</Cases>
+<%Cases>0.12</%Cases>
+<Deaths>5046</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mauritania" target="_blank">Mauritania</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>5315065</Population>
+<Cases>63848</Cases>
+<%Cases>1.2</%Cases>
+<Deaths>997</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bhutan" target="_blank">Bhutan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>796682</Population>
+<Cases>62697</Cases>
+<%Cases>7.87</%Cases>
+<Deaths>21</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Syria" target="_blank">Syria</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>25620427</Population>
+<Cases>57743</Cases>
+<%Cases>0.23</%Cases>
+<Deaths>3165</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Burundi" target="_blank">Burundi</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>14390003</Population>
+<Cases>54721</Cases>
+<%Cases>0.38</%Cases>
+<Deaths>38</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Seychelles" target="_blank">Seychelles</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>132779</Population>
+<Cases>51220</Cases>
+<%Cases>38.58</%Cases>
+<Deaths>172</Deaths>
+<%Deaths>0.13</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Gabon" target="_blank">Gabon</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>2593130</Population>
+<Cases>49051</Cases>
+<%Cases>1.89</%Cases>
+<Deaths>307</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Andorra" target="_blank">Andorra</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>82904</Population>
+<Cases>48015</Cases>
+<%Cases>57.92</%Cases>
+<Deaths>165</Deaths>
+<%Deaths>0.2</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Papua New Guinea" target="_blank">Papua New Guinea</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>10762817</Population>
+<Cases>46864</Cases>
+<%Cases>0.44</%Cases>
+<Deaths>670</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Curaçao" target="_blank">Curaçao</a>
+</Country>
+<Continent>North America</Continent>
+<Population>185487</Population>
+<Cases>45986</Cases>
+<%Cases>24.79</%Cases>
+<Deaths>295</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Aruba" target="_blank">Aruba</a>
+</Country>
+<Continent>North America</Continent>
+<Population>108147</Population>
+<Cases>44224</Cases>
+<%Cases>40.89</%Cases>
+<Deaths>292</Deaths>
+<%Deaths>0.27</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Tanzania" target="_blank">Tanzania</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>70545865</Population>
+<Cases>43223</Cases>
+<%Cases>0.06</%Cases>
+<Deaths>846</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mauritius" target="_blank">Mauritius</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>1268280</Population>
+<Cases>43025</Cases>
+<%Cases>3.39</%Cases>
+<Deaths>1051</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mayotte" target="_blank">Mayotte</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>337011</Population>
+<Cases>42027</Cases>
+<%Cases>12.47</%Cases>
+<Deaths>188</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Togo" target="_blank">Togo</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>9721608</Population>
+<Cases>39572</Cases>
+<%Cases>0.41</%Cases>
+<Deaths>290</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Guinea" target="_blank">Guinea</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>15099727</Population>
+<Cases>38572</Cases>
+<%Cases>0.26</%Cases>
+<Deaths>468</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bahamas" target="_blank">Bahamas</a>
+</Country>
+<Continent>North America</Continent>
+<Population>403033</Population>
+<Cases>38084</Cases>
+<%Cases>9.45</%Cases>
+<Deaths>844</Deaths>
+<%Deaths>0.21</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Isle of Man" target="_blank">Isle of Man</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>84118</Population>
+<Cases>38008</Cases>
+<%Cases>45.18</%Cases>
+<Deaths>116</Deaths>
+<%Deaths>0.14</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Lesotho" target="_blank">Lesotho</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>2363325</Population>
+<Cases>36138</Cases>
+<%Cases>1.53</%Cases>
+<Deaths>723</Deaths>
+<%Deaths>0.03</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Haiti" target="_blank">Haiti</a>
+</Country>
+<Continent>North America</Continent>
+<Population>11906095</Population>
+<Cases>34667</Cases>
+<%Cases>0.29</%Cases>
+<Deaths>860</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Faeroe Islands" target="_blank">Faeroe Islands</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>56002</Population>
+<Cases>34658</Cases>
+<%Cases>61.89</%Cases>
+<Deaths>28</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Mali" target="_blank">Mali</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>25198821</Population>
+<Cases>33164</Cases>
+<%Cases>0.13</%Cases>
+<Deaths>743</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cayman Islands" target="_blank">Cayman Islands</a>
+</Country>
+<Continent>North America</Continent>
+<Population>75844</Population>
+<Cases>31472</Cases>
+<%Cases>41.5</%Cases>
+<Deaths>37</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Saint Lucia" target="_blank">Saint Lucia</a>
+</Country>
+<Continent>North America</Continent>
+<Population>180149</Population>
+<Cases>30215</Cases>
+<%Cases>16.77</%Cases>
+<Deaths>410</Deaths>
+<%Deaths>0.23</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Benin" target="_blank">Benin</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>14814460</Population>
+<Cases>28036</Cases>
+<%Cases>0.19</%Cases>
+<Deaths>163</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Macao" target="_blank">Macao</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>722007</Population>
+<Cases>27673</Cases>
+<%Cases>3.83</%Cases>
+<Deaths>123</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Somalia" target="_blank">Somalia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>19654739</Population>
+<Cases>27334</Cases>
+<%Cases>0.14</%Cases>
+<Deaths>1361</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Micronesia" target="_blank">Micronesia</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>113683</Population>
+<Cases>26547</Cases>
+<%Cases>23.35</%Cases>
+<Deaths>65</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/San Marino" target="_blank">San Marino</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>33572</Population>
+<Cases>26185</Cases>
+<%Cases>78.0</%Cases>
+<Deaths>128</Deaths>
+<%Deaths>0.38</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Solomon Islands" target="_blank">Solomon Islands</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>838645</Population>
+<Cases>25954</Cases>
+<%Cases>3.09</%Cases>
+<Deaths>199</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Congo" target="_blank">Congo</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>6484437</Population>
+<Cases>25375</Cases>
+<%Cases>0.39</%Cases>
+<Deaths>386</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Timor-Leste" target="_blank">Timor-Leste</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>1418517</Population>
+<Cases>23460</Cases>
+<%Cases>1.65</%Cases>
+<Deaths>138</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Burkina Faso" target="_blank">Burkina Faso</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>24074580</Population>
+<Cases>22114</Cases>
+<%Cases>0.09</%Cases>
+<Deaths>400</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Liechtenstein" target="_blank">Liechtenstein</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>40128</Population>
+<Cases>21574</Cases>
+<%Cases>53.76</%Cases>
+<Deaths>94</Deaths>
+<%Deaths>0.23</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Gibraltar" target="_blank">Gibraltar</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>40126</Population>
+<Cases>20550</Cases>
+<%Cases>51.21</%Cases>
+<Deaths>113</Deaths>
+<%Deaths>0.28</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Grenada" target="_blank">Grenada</a>
+</Country>
+<Continent>North America</Continent>
+<Population>117303</Population>
+<Cases>19693</Cases>
+<%Cases>16.79</%Cases>
+<Deaths>238</Deaths>
+<%Deaths>0.2</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Bermuda" target="_blank">Bermuda</a>
+</Country>
+<Continent>North America</Continent>
+<Population>64555</Population>
+<Cases>18860</Cases>
+<%Cases>29.22</%Cases>
+<Deaths>165</Deaths>
+<%Deaths>0.26</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/South Sudan" target="_blank">South Sudan</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>12188788</Population>
+<Cases>18819</Cases>
+<%Cases>0.15</%Cases>
+<Deaths>147</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Nicaragua" target="_blank">Nicaragua</a>
+</Country>
+<Continent>North America</Continent>
+<Population>7007502</Population>
+<Cases>18491</Cases>
+<%Cases>0.26</%Cases>
+<Deaths>225</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Tajikistan" target="_blank">Tajikistan</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>10786734</Population>
+<Cases>17786</Cases>
+<%Cases>0.16</%Cases>
+<Deaths>125</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Equatorial Guinea" target="_blank">Equatorial Guinea</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>1938431</Population>
+<Cases>17229</Cases>
+<%Cases>0.89</%Cases>
+<Deaths>183</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Monaco" target="_blank">Monaco</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>38341</Population>
+<Cases>17181</Cases>
+<%Cases>44.81</%Cases>
+<Deaths>67</Deaths>
+<%Deaths>0.17</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Samoa" target="_blank">Samoa</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>219306</Population>
+<Cases>17006</Cases>
+<%Cases>7.75</%Cases>
+<Deaths>31</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Tonga" target="_blank">Tonga</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>103742</Population>
+<Cases>16950</Cases>
+<%Cases>16.34</%Cases>
+<Deaths>13</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Marshall Islands" target="_blank">Marshall Islands</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>36282</Population>
+<Cases>16138</Cases>
+<%Cases>44.48</%Cases>
+<Deaths>17</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Dominica" target="_blank">Dominica</a>
+</Country>
+<Continent>North America</Continent>
+<Population>65871</Population>
+<Cases>16038</Cases>
+<%Cases>24.35</%Cases>
+<Deaths>74</Deaths>
+<%Deaths>0.11</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Djibouti" target="_blank">Djibouti</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>1184076</Population>
+<Cases>15690</Cases>
+<%Cases>1.33</%Cases>
+<Deaths>189</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Central African Republic" target="_blank">Central African Republic</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>5513282</Population>
+<Cases>15440</Cases>
+<%Cases>0.28</%Cases>
+<Deaths>113</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Gambia" target="_blank">Gambia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>2822093</Population>
+<Cases>12626</Cases>
+<%Cases>0.45</%Cases>
+<Deaths>372</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Vanuatu" target="_blank">Vanuatu</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>335169</Population>
+<Cases>12019</Cases>
+<%Cases>3.59</%Cases>
+<Deaths>14</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Greenland" target="_blank">Greenland</a>
+</Country>
+<Continent>North America</Continent>
+<Population>55745</Population>
+<Cases>11971</Cases>
+<%Cases>21.47</%Cases>
+<Deaths>21</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Yemen" target="_blank">Yemen</a>
+</Country>
+<Continent>Asia</Continent>
+<Population>41773878</Population>
+<Cases>11945</Cases>
+<%Cases>0.03</%Cases>
+<Deaths>2159</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Caribbean Netherlands" target="_blank">Caribbean Netherlands</a>
+</Country>
+<Continent>North America</Continent>
+<Population>31338</Population>
+<Cases>11682</Cases>
+<%Cases>37.28</%Cases>
+<Deaths>38</Deaths>
+<%Deaths>0.12</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Sint Maarten" target="_blank">Sint Maarten</a>
+</Country>
+<Continent>North America</Continent>
+<Population>43923</Population>
+<Cases>11051</Cases>
+<%Cases>25.16</%Cases>
+<Deaths>92</Deaths>
+<%Deaths>0.21</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Eritrea" target="_blank">Eritrea</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>3607003</Population>
+<Cases>10189</Cases>
+<%Cases>0.28</%Cases>
+<Deaths>103</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Niger" target="_blank">Niger</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>27917831</Population>
+<Cases>9931</Cases>
+<%Cases>0.04</%Cases>
+<Deaths>312</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/St. Vincent &amp; Grenadines" target="_blank">St. Vincent &amp; Grenadines</a>
+</Country>
+<Continent>North America</Continent>
+<Population>99924</Population>
+<Cases>9674</Cases>
+<%Cases>9.68</%Cases>
+<Deaths>124</Deaths>
+<%Deaths>0.12</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Guinea-Bissau" target="_blank">Guinea-Bissau</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>2249515</Population>
+<Cases>9614</Cases>
+<%Cases>0.43</%Cases>
+<Deaths>177</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Comoros" target="_blank">Comoros</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>882847</Population>
+<Cases>9109</Cases>
+<%Cases>1.03</%Cases>
+<Deaths>161</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Antigua and Barbuda" target="_blank">Antigua and Barbuda</a>
+</Country>
+<Continent>North America</Continent>
+<Population>94209</Population>
+<Cases>9106</Cases>
+<%Cases>9.67</%Cases>
+<Deaths>146</Deaths>
+<%Deaths>0.15</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Liberia" target="_blank">Liberia</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>5731206</Population>
+<Cases>8090</Cases>
+<%Cases>0.14</%Cases>
+<Deaths>295</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Sierra Leone" target="_blank">Sierra Leone</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>8819794</Population>
+<Cases>7779</Cases>
+<%Cases>0.09</%Cases>
+<Deaths>126</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Chad" target="_blank">Chad</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>21003705</Population>
+<Cases>7701</Cases>
+<%Cases>0.04</%Cases>
+<Deaths>194</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/British Virgin Islands" target="_blank">British Virgin Islands</a>
+</Country>
+<Continent>North America</Continent>
+<Population>39732</Population>
+<Cases>7392</Cases>
+<%Cases>18.6</%Cases>
+<Deaths>64</Deaths>
+<%Deaths>0.16</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Cook Islands" target="_blank">Cook Islands</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>13263</Population>
+<Cases>7203</Cases>
+<%Cases>54.31</%Cases>
+<Deaths>2</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Sao Tome &amp; Principe" target="_blank">Sao Tome &amp; Principe</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>240254</Population>
+<Cases>6778</Cases>
+<%Cases>2.82</%Cases>
+<Deaths>80</Deaths>
+<%Deaths>0.03</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Turks and Caicos" target="_blank">Turks and Caicos</a>
+</Country>
+<Continent>North America</Continent>
+<Population>46855</Population>
+<Cases>6752</Cases>
+<%Cases>14.41</%Cases>
+<Deaths>40</Deaths>
+<%Deaths>0.09</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Saint Kitts &amp; Nevis" target="_blank">Saint Kitts &amp; Nevis</a>
+</Country>
+<Continent>North America</Continent>
+<Population>46922</Population>
+<Cases>6607</Cases>
+<%Cases>14.08</%Cases>
+<Deaths>48</Deaths>
+<%Deaths>0.1</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Palau" target="_blank">Palau</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>17663</Population>
+<Cases>6290</Cases>
+<%Cases>35.61</%Cases>
+<Deaths>10</Deaths>
+<%Deaths>0.06</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Saint Barthelemy" target="_blank">Saint Barthelemy</a>
+</Country>
+<Continent>North America</Continent>
+<Population>11414</Population>
+<Cases>5507</Cases>
+<%Cases>48.25</%Cases>
+<Deaths>6</Deaths>
+<%Deaths>0.05</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Nauru" target="_blank">Nauru</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>12025</Population>
+<Cases>5393</Cases>
+<%Cases>44.85</%Cases>
+<Deaths>1</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Kiribati" target="_blank">Kiribati</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>136488</Population>
+<Cases>5085</Cases>
+<%Cases>3.73</%Cases>
+<Deaths>24</Deaths>
+<%Deaths>0.02</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Anguilla" target="_blank">Anguilla</a>
+</Country>
+<Continent>North America</Continent>
+<Population>14728</Population>
+<Cases>3904</Cases>
+<%Cases>26.51</%Cases>
+<Deaths>12</Deaths>
+<%Deaths>0.08</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Wallis &amp; Futuna" target="_blank">Wallis &amp; Futuna</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>11194</Population>
+<Cases>3550</Cases>
+<%Cases>31.71</%Cases>
+<Deaths>8</Deaths>
+<%Deaths>0.07</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Saint Pierre &amp; Miquelon" target="_blank">Saint Pierre &amp; Miquelon</a>
+</Country>
+<Continent>North America</Continent>
+<Population>5574</Population>
+<Cases>3452</Cases>
+<%Cases>61.93</%Cases>
+<Deaths>2</Deaths>
+<%Deaths>0.04</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Tuvalu" target="_blank">Tuvalu</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>9492</Population>
+<Cases>2943</Cases>
+<%Cases>31.01</%Cases>
+<Deaths>1</Deaths>
+<%Deaths>0.01</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Saint Helena" target="_blank">Saint Helena</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>5197</Population>
+<Cases>2166</Cases>
+<%Cases>41.68</%Cases>
+<Deaths>0</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Falkland Islands" target="_blank">Falkland Islands</a>
+</Country>
+<Continent>South America</Continent>
+<Population>3469</Population>
+<Cases>1930</Cases>
+<%Cases>55.64</%Cases>
+<Deaths>0</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Montserrat" target="_blank">Montserrat</a>
+</Country>
+<Continent>North America</Continent>
+<Population>4359</Population>
+<Cases>1403</Cases>
+<%Cases>32.19</%Cases>
+<Deaths>8</Deaths>
+<%Deaths>0.18</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Niue" target="_blank">Niue</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>1821</Population>
+<Cases>1059</Cases>
+<%Cases>58.15</%Cases>
+<Deaths>0</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Tokelau" target="_blank">Tokelau</a>
+</Country>
+<Continent>Australia/Oceania</Continent>
+<Population>2608</Population>
+<Cases>80</Cases>
+<%Cases>3.07</%Cases>
+<Deaths>0</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Holy See" target="_blank">Holy See</a>
+</Country>
+<Continent>Europe</Continent>
+<Population>501</Population>
+<Cases>29</Cases>
+<%Cases>5.79</%Cases>
+<Deaths>0</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+<row>
+<Country><a href="https://en.wikipedia.org/wiki/Western Sahara" target="_blank">Western Sahara</a>
+</Country>
+<Continent>Africa</Continent>
+<Population>600904</Population>
+<Cases>10</Cases>
+<%Cases>0.0</%Cases>
+<Deaths>1</Deaths>
+<%Deaths>0.0</%Deaths>
+</row>
+</root>

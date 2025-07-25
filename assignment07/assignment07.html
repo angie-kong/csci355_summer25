@@ -1,0 +1,217 @@
+<html><head><meta name="description" content="OutputUtil developed by LT. Executed by /Users/angiekong/Developer/CSCI_355_Sum25">
+<style>body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+h3 {
+    color: darkgreen;
+}
+.vericaltext {
+ writing-mode: vertical-lr;
+ text-orientation: upright;
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    vertical-align: top
+}
+th > a {
+    color: white;
+}
+th {
+    background-color: darkgreen;
+    color: darkseagreen;
+}
+tr:nth-child(even) {
+    background-color: darkseagreen;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: white;
+    color: darkseagreen;
+}</style>
+<script>
+function sortTable(tableId, colNum, colType) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchCount = 0;
+  table = document.getElementById(tableId);
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[colNum];
+      y = rows[i + 1].getElementsByTagName("td")[colNum];
+      if (colType == 'N') { 
+        if (((dir == "asc") && (Number(x.innerHTML) > Number(y.innerHTML))) ||
+            ((dir == "desc") && (Number(x.innerHTML) < Number(y.innerHTML)))) {
+          shouldSwitch = true;
+          break;
+        }
+      } else {
+        if (((dir == "asc") && (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase())) ||
+            ((dir == "desc") && (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()))) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchCount ++;
+    } else {
+     if (switchCount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</head>
+<body><h1>My Routing Table<br>Angela Kong</h1>
+<table id="table-102" style="width:100%"><th><a href="javascript:sortTable('table-102', 0, 'S')"">Destination</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 1, 'S')"">Gateway</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 2, 'S')"">RT_IFA</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 3, 'S')"">Flags</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 4, 'S')"">Refs</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 5, 'S')"">Use</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 6, 'S')"">Mtu</a>
+</th>
+<th><a href="javascript:sortTable('table-102', 7, 'S')"">Netif Expire</a>
+</th>
+<tr><td style="text-align:left;">default</td>
+<td style="text-align:left;">10.128.128.128</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UGScg</td>
+<td style="text-align:left;">190</td>
+<td style="text-align:left;">64</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0</td>
+</tr>
+<tr><td style="text-align:left;">10</td>
+<td style="text-align:left;">link#14</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UCS</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+<tr><td style="text-align:left;">10.128.128.128/32</td>
+<td style="text-align:left;">link#14</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UCS</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+<tr><td style="text-align:left;">10.128.128.128</td>
+<td style="text-align:left;">98:18:88:12:89:fb</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UHLWIir</td>
+<td style="text-align:left;">42</td>
+<td style="text-align:left;">942</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0   1186</td>
+</tr>
+<tr><td style="text-align:left;">10.201.183.129/32</td>
+<td style="text-align:left;">link#14</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UCS</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+<tr><td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">56:a0:de:2:c:f</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UHLWI</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">11  1</td>
+<td style="text-align:left;">6384</td>
+<td style="text-align:left;">lo0</td>
+</tr>
+<tr><td style="text-align:left;">10.255.255.255</td>
+<td style="text-align:left;">ff:ff:ff:ff:ff:ff</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UHLWbI</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">9</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+<tr><td style="text-align:left;">127</td>
+<td style="text-align:left;">127.0.0.1</td>
+<td style="text-align:left;">127.0.0.1</td>
+<td style="text-align:left;">UCS</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">0  1</td>
+<td style="text-align:left;">6384</td>
+<td style="text-align:left;">lo0</td>
+</tr>
+<tr><td style="text-align:left;">127.0.0.1</td>
+<td style="text-align:left;">127.0.0.1</td>
+<td style="text-align:left;">127.0.0.1</td>
+<td style="text-align:left;">UH</td>
+<td style="text-align:left;">5</td>
+<td style="text-align:left;">047  1</td>
+<td style="text-align:left;">6384</td>
+<td style="text-align:left;">lo0</td>
+</tr>
+<tr><td style="text-align:left;">169.254</td>
+<td style="text-align:left;">link#14</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UCS</td>
+<td style="text-align:left;">5</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+<tr><td style="text-align:left;">224.0.0/4</td>
+<td style="text-align:left;">link#14</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UmCS</td>
+<td style="text-align:left;">1</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+<tr><td style="text-align:left;">224.0.0.251</td>
+<td style="text-align:left;">1:0:5e:0:0:fb</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UHmLWI</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0</td>
+</tr>
+<tr><td style="text-align:left;">255.255.255.255/32</td>
+<td style="text-align:left;">link#14</td>
+<td style="text-align:left;">10.201.183.129</td>
+<td style="text-align:left;">UCS</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">0</td>
+<td style="text-align:left;">1500</td>
+<td style="text-align:left;">en0      !</td>
+</tr>
+</table>
+<center><h6>&copy;2024 • All Rights Reserved • Generated on Jul. 16, 2025 11:50 AM</h6>
+</center>
+</body>
+</html>

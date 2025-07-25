@@ -1,0 +1,2132 @@
+<html><head><meta name="description" content="OutputUtil developed by LT. Executed by /Users/angiekong/Developer/CSCI_355_Sum25">
+<style>body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: darkgreen;
+    text-align: center;
+}
+h3 {
+    color: darkgreen;
+}
+.vericaltext {
+ writing-mode: vertical-lr;
+ text-orientation: upright;
+}
+
+table, th, td {
+    border: 1px solid;
+    text-align: center;
+    vertical-align: top
+}
+th > a {
+    color: white;
+}
+th {
+    background-color: darkgreen;
+    color: darkseagreen;
+}
+tr:nth-child(even) {
+    background-color: darkseagreen;
+    color: white;
+}
+tr:nth-child(odd) {
+    background-color: white;
+    color: darkseagreen;
+}</style>
+<script>
+function sortTable(tableId, colNum, colType) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchCount = 0;
+  table = document.getElementById(tableId);
+  switching = true;
+  dir = "asc";
+  while (switching) {
+    switching = false;
+    rows = table.rows;
+    for (i = 1; i < (rows.length - 1); i++) {
+      shouldSwitch = false;
+      x = rows[i].getElementsByTagName("td")[colNum];
+      y = rows[i + 1].getElementsByTagName("td")[colNum];
+      if (colType == 'N') { 
+        if (((dir == "asc") && (Number(x.innerHTML) > Number(y.innerHTML))) ||
+            ((dir == "desc") && (Number(x.innerHTML) < Number(y.innerHTML)))) {
+          shouldSwitch = true;
+          break;
+        }
+      } else {
+        if (((dir == "asc") && (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase())) ||
+            ((dir == "desc") && (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()))) {
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      switchCount ++;
+    } else {
+     if (switchCount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+</head>
+<body><h1>Assignment 02<br>COVID Data<br>Angela Kong</h1>
+<table id="table-47" style="width:100%"><th><a href="javascript:sortTable('table-47', 0, 'S')"">Country</a>
+</th>
+<th><a href="javascript:sortTable('table-47', 1, 'S')"">Continent</a>
+</th>
+<th><a href="javascript:sortTable('table-47', 2, 'N')"">Population</a>
+</th>
+<th><a href="javascript:sortTable('table-47', 3, 'N')"">Cases</a>
+</th>
+<th><a href="javascript:sortTable('table-47', 4, 'N')"">% Cases</a>
+</th>
+<th><a href="javascript:sortTable('table-47', 5, 'N')"">Deaths</a>
+</th>
+<th><a href="javascript:sortTable('table-47', 6, 'N')"">% Deaths</a>
+</th>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/United States" target="_blank">United States</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">347275807</td>
+<td style="text-align:right;">111820082</td>
+<td style="text-align:right;">32.2</td>
+<td style="text-align:right;">1219487</td>
+<td style="text-align:right;">0.35</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/India" target="_blank">India</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">1463865525</td>
+<td style="text-align:right;">45035393</td>
+<td style="text-align:right;">3.08</td>
+<td style="text-align:right;">533570</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">66650804</td>
+<td style="text-align:right;">40138560</td>
+<td style="text-align:right;">60.22</td>
+<td style="text-align:right;">167642</td>
+<td style="text-align:right;">0.25</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Germany" target="_blank">Germany</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">84075075</td>
+<td style="text-align:right;">38828995</td>
+<td style="text-align:right;">46.18</td>
+<td style="text-align:right;">183027</td>
+<td style="text-align:right;">0.22</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Brazil" target="_blank">Brazil</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">212812405</td>
+<td style="text-align:right;">38743918</td>
+<td style="text-align:right;">18.21</td>
+<td style="text-align:right;">711380</td>
+<td style="text-align:right;">0.33</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/South Korea" target="_blank">South Korea</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">51667029</td>
+<td style="text-align:right;">34571873</td>
+<td style="text-align:right;">66.91</td>
+<td style="text-align:right;">35934</td>
+<td style="text-align:right;">0.07</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Japan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">123103479</td>
+<td style="text-align:right;">33804284</td>
+<td style="text-align:right;">27.46</td>
+<td style="text-align:right;">74707</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Italy" target="_blank">Italy</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">59146260</td>
+<td style="text-align:right;">26723249</td>
+<td style="text-align:right;">45.18</td>
+<td style="text-align:right;">196487</td>
+<td style="text-align:right;">0.33</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/United Kingdom" target="_blank">United Kingdom</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">69551332</td>
+<td style="text-align:right;">24910387</td>
+<td style="text-align:right;">35.82</td>
+<td style="text-align:right;">232112</td>
+<td style="text-align:right;">0.33</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Russia" target="_blank">Russia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">143997393</td>
+<td style="text-align:right;">24124215</td>
+<td style="text-align:right;">16.75</td>
+<td style="text-align:right;">402756</td>
+<td style="text-align:right;">0.28</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Turkey" target="_blank">Turkey</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">87685426</td>
+<td style="text-align:right;">17232066</td>
+<td style="text-align:right;">19.65</td>
+<td style="text-align:right;">102174</td>
+<td style="text-align:right;">0.12</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Spain" target="_blank">Spain</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">47889958</td>
+<td style="text-align:right;">13914811</td>
+<td style="text-align:right;">29.06</td>
+<td style="text-align:right;">121760</td>
+<td style="text-align:right;">0.25</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Australia" target="_blank">Australia</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">26974026</td>
+<td style="text-align:right;">11853144</td>
+<td style="text-align:right;">43.94</td>
+<td style="text-align:right;">24414</td>
+<td style="text-align:right;">0.09</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Vietnam" target="_blank">Vietnam</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">101598527</td>
+<td style="text-align:right;">11625195</td>
+<td style="text-align:right;">11.44</td>
+<td style="text-align:right;">43206</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Taiwan" target="_blank">Taiwan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">23112793</td>
+<td style="text-align:right;">10241523</td>
+<td style="text-align:right;">44.31</td>
+<td style="text-align:right;">19005</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Argentina" target="_blank">Argentina</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">45851378</td>
+<td style="text-align:right;">10128845</td>
+<td style="text-align:right;">22.09</td>
+<td style="text-align:right;">130841</td>
+<td style="text-align:right;">0.29</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Netherlands</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">18346819</td>
+<td style="text-align:right;">8635786</td>
+<td style="text-align:right;">47.07</td>
+<td style="text-align:right;">22992</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mexico" target="_blank">Mexico</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">131946900</td>
+<td style="text-align:right;">7702809</td>
+<td style="text-align:right;">5.84</td>
+<td style="text-align:right;">334958</td>
+<td style="text-align:right;">0.25</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Iran" target="_blank">Iran</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">92417681</td>
+<td style="text-align:right;">7627186</td>
+<td style="text-align:right;">8.25</td>
+<td style="text-align:right;">146811</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Indonesia" target="_blank">Indonesia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">285721236</td>
+<td style="text-align:right;">6829221</td>
+<td style="text-align:right;">2.39</td>
+<td style="text-align:right;">162063</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Poland" target="_blank">Poland</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">38140910</td>
+<td style="text-align:right;">6661991</td>
+<td style="text-align:right;">17.47</td>
+<td style="text-align:right;">120598</td>
+<td style="text-align:right;">0.32</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Colombia" target="_blank">Colombia</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">53425635</td>
+<td style="text-align:right;">6400173</td>
+<td style="text-align:right;">11.98</td>
+<td style="text-align:right;">143200</td>
+<td style="text-align:right;">0.27</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Greece" target="_blank">Greece</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">9938844</td>
+<td style="text-align:right;">6101379</td>
+<td style="text-align:right;">61.39</td>
+<td style="text-align:right;">37869</td>
+<td style="text-align:right;">0.38</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Austria" target="_blank">Austria</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">9113574</td>
+<td style="text-align:right;">6081287</td>
+<td style="text-align:right;">66.73</td>
+<td style="text-align:right;">22542</td>
+<td style="text-align:right;">0.25</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Portugal" target="_blank">Portugal</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">10411834</td>
+<td style="text-align:right;">5643062</td>
+<td style="text-align:right;">54.2</td>
+<td style="text-align:right;">28126</td>
+<td style="text-align:right;">0.27</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Ukraine" target="_blank">Ukraine</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">38980376</td>
+<td style="text-align:right;">5557995</td>
+<td style="text-align:right;">14.26</td>
+<td style="text-align:right;">112418</td>
+<td style="text-align:right;">0.29</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Chile" target="_blank">Chile</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">19859921</td>
+<td style="text-align:right;">5384853</td>
+<td style="text-align:right;">27.11</td>
+<td style="text-align:right;">64497</td>
+<td style="text-align:right;">0.32</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank">Malaysia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">35977838</td>
+<td style="text-align:right;">5278406</td>
+<td style="text-align:right;">14.67</td>
+<td style="text-align:right;">37348</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Canada" target="_blank">Canada</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">40126723</td>
+<td style="text-align:right;">4946090</td>
+<td style="text-align:right;">12.33</td>
+<td style="text-align:right;">59034</td>
+<td style="text-align:right;">0.15</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Belgium" target="_blank">Belgium</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">11758603</td>
+<td style="text-align:right;">4861695</td>
+<td style="text-align:right;">41.35</td>
+<td style="text-align:right;">34376</td>
+<td style="text-align:right;">0.29</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Israel" target="_blank">Israel</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">9517181</td>
+<td style="text-align:right;">4841772</td>
+<td style="text-align:right;">50.87</td>
+<td style="text-align:right;">12707</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/North Korea" target="_blank">North Korea</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">26571036</td>
+<td style="text-align:right;">4772813</td>
+<td style="text-align:right;">17.96</td>
+<td style="text-align:right;">74</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Thailand" target="_blank">Thailand</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">71619863</td>
+<td style="text-align:right;">4770149</td>
+<td style="text-align:right;">6.66</td>
+<td style="text-align:right;">34586</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Czech Republic (Czechia)" target="_blank">Czech Republic (Czechia)</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">10609239</td>
+<td style="text-align:right;">4759041</td>
+<td style="text-align:right;">44.86</td>
+<td style="text-align:right;">43517</td>
+<td style="text-align:right;">0.41</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Peru" target="_blank">Peru</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">34576665</td>
+<td style="text-align:right;">4572667</td>
+<td style="text-align:right;">13.22</td>
+<td style="text-align:right;">222161</td>
+<td style="text-align:right;">0.64</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Switzerland" target="_blank">Switzerland</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">8967407</td>
+<td style="text-align:right;">4453053</td>
+<td style="text-align:right;">49.66</td>
+<td style="text-align:right;">14452</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Philippines" target="_blank">Philippines</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">116786962</td>
+<td style="text-align:right;">4140383</td>
+<td style="text-align:right;">3.55</td>
+<td style="text-align:right;">66864</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/South Africa" target="_blank">South Africa</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">64747319</td>
+<td style="text-align:right;">4076463</td>
+<td style="text-align:right;">6.3</td>
+<td style="text-align:right;">102595</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Romania" target="_blank">Romania</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">18908650</td>
+<td style="text-align:right;">3529735</td>
+<td style="text-align:right;">18.67</td>
+<td style="text-align:right;">68929</td>
+<td style="text-align:right;">0.36</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Denmark" target="_blank">Denmark</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">6002507</td>
+<td style="text-align:right;">3183756</td>
+<td style="text-align:right;">53.04</td>
+<td style="text-align:right;">8814</td>
+<td style="text-align:right;">0.15</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Singapore</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">5870750</td>
+<td style="text-align:right;">3006155</td>
+<td style="text-align:right;">51.21</td>
+<td style="text-align:right;">2024</td>
+<td style="text-align:right;">0.03</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Hong Kong" target="_blank">Hong Kong</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">7396076</td>
+<td style="text-align:right;">2937609</td>
+<td style="text-align:right;">39.72</td>
+<td style="text-align:right;">14924</td>
+<td style="text-align:right;">0.2</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Sweden" target="_blank">Sweden</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">10656633</td>
+<td style="text-align:right;">2754129</td>
+<td style="text-align:right;">25.84</td>
+<td style="text-align:right;">27407</td>
+<td style="text-align:right;">0.26</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/New Zealand" target="_blank">New Zealand</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">5251899</td>
+<td style="text-align:right;">2621111</td>
+<td style="text-align:right;">49.91</td>
+<td style="text-align:right;">5697</td>
+<td style="text-align:right;">0.11</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Serbia" target="_blank">Serbia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">6689039</td>
+<td style="text-align:right;">2615054</td>
+<td style="text-align:right;">39.09</td>
+<td style="text-align:right;">18057</td>
+<td style="text-align:right;">0.27</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Iraq" target="_blank">Iraq</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">47020774</td>
+<td style="text-align:right;">2465545</td>
+<td style="text-align:right;">5.24</td>
+<td style="text-align:right;">25375</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Hungary" target="_blank">Hungary</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">9632287</td>
+<td style="text-align:right;">2230232</td>
+<td style="text-align:right;">23.15</td>
+<td style="text-align:right;">49048</td>
+<td style="text-align:right;">0.51</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bangladesh" target="_blank">Bangladesh</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">175686899</td>
+<td style="text-align:right;">2049377</td>
+<td style="text-align:right;">1.17</td>
+<td style="text-align:right;">29493</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Slovakia" target="_blank">Slovakia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">5474881</td>
+<td style="text-align:right;">1877605</td>
+<td style="text-align:right;">34.29</td>
+<td style="text-align:right;">21224</td>
+<td style="text-align:right;">0.39</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Georgia" target="_blank">Georgia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">3806671</td>
+<td style="text-align:right;">1861665</td>
+<td style="text-align:right;">48.91</td>
+<td style="text-align:right;">17132</td>
+<td style="text-align:right;">0.45</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Jordan" target="_blank">Jordan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">11520684</td>
+<td style="text-align:right;">1746997</td>
+<td style="text-align:right;">15.16</td>
+<td style="text-align:right;">14122</td>
+<td style="text-align:right;">0.12</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Ireland" target="_blank">Ireland</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">5308039</td>
+<td style="text-align:right;">1734582</td>
+<td style="text-align:right;">32.68</td>
+<td style="text-align:right;">9491</td>
+<td style="text-align:right;">0.18</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Pakistan" target="_blank">Pakistan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">255219554</td>
+<td style="text-align:right;">1581936</td>
+<td style="text-align:right;">0.62</td>
+<td style="text-align:right;">30664</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Finland" target="_blank">Finland</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">5623329</td>
+<td style="text-align:right;">1516117</td>
+<td style="text-align:right;">26.96</td>
+<td style="text-align:right;">11958</td>
+<td style="text-align:right;">0.21</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Norway" target="_blank">Norway</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">5623071</td>
+<td style="text-align:right;">1509732</td>
+<td style="text-align:right;">26.85</td>
+<td style="text-align:right;">6638</td>
+<td style="text-align:right;">0.12</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Kazakhstan" target="_blank">Kazakhstan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">20843754</td>
+<td style="text-align:right;">1411831</td>
+<td style="text-align:right;">6.77</td>
+<td style="text-align:right;">13848</td>
+<td style="text-align:right;">0.07</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Lithuania" target="_blank">Lithuania</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">2830144</td>
+<td style="text-align:right;">1397806</td>
+<td style="text-align:right;">49.39</td>
+<td style="text-align:right;">9897</td>
+<td style="text-align:right;">0.35</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Slovenia" target="_blank">Slovenia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">2117072</td>
+<td style="text-align:right;">1356546</td>
+<td style="text-align:right;">64.08</td>
+<td style="text-align:right;">7100</td>
+<td style="text-align:right;">0.34</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bulgaria" target="_blank">Bulgaria</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">6714560</td>
+<td style="text-align:right;">1339851</td>
+<td style="text-align:right;">19.95</td>
+<td style="text-align:right;">38748</td>
+<td style="text-align:right;">0.58</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Croatia" target="_blank">Croatia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">3848160</td>
+<td style="text-align:right;">1309728</td>
+<td style="text-align:right;">34.04</td>
+<td style="text-align:right;">18687</td>
+<td style="text-align:right;">0.49</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Guatemala" target="_blank">Guatemala</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">18687881</td>
+<td style="text-align:right;">1291293</td>
+<td style="text-align:right;">6.91</td>
+<td style="text-align:right;">20289</td>
+<td style="text-align:right;">0.11</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Morocco" target="_blank">Morocco</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">38430770</td>
+<td style="text-align:right;">1278992</td>
+<td style="text-align:right;">3.33</td>
+<td style="text-align:right;">16303</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Lebanon" target="_blank">Lebanon</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">5849421</td>
+<td style="text-align:right;">1243838</td>
+<td style="text-align:right;">21.26</td>
+<td style="text-align:right;">10952</td>
+<td style="text-align:right;">0.19</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Costa Rica" target="_blank">Costa Rica</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">5152950</td>
+<td style="text-align:right;">1238883</td>
+<td style="text-align:right;">24.04</td>
+<td style="text-align:right;">9428</td>
+<td style="text-align:right;">0.18</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bolivia" target="_blank">Bolivia</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">12581843</td>
+<td style="text-align:right;">1212131</td>
+<td style="text-align:right;">9.63</td>
+<td style="text-align:right;">22407</td>
+<td style="text-align:right;">0.18</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Tunisia" target="_blank">Tunisia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">12348573</td>
+<td style="text-align:right;">1153361</td>
+<td style="text-align:right;">9.34</td>
+<td style="text-align:right;">29423</td>
+<td style="text-align:right;">0.24</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cuba" target="_blank">Cuba</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">10937203</td>
+<td style="text-align:right;">1115251</td>
+<td style="text-align:right;">10.2</td>
+<td style="text-align:right;">8530</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Ecuador" target="_blank">Ecuador</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">18289896</td>
+<td style="text-align:right;">1070188</td>
+<td style="text-align:right;">5.85</td>
+<td style="text-align:right;">36043</td>
+<td style="text-align:right;">0.2</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/United Arab Emirates" target="_blank">United Arab Emirates</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">11346000</td>
+<td style="text-align:right;">1067030</td>
+<td style="text-align:right;">9.4</td>
+<td style="text-align:right;">2349</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Panama" target="_blank">Panama</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">4571189</td>
+<td style="text-align:right;">1059893</td>
+<td style="text-align:right;">23.19</td>
+<td style="text-align:right;">8727</td>
+<td style="text-align:right;">0.19</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Uruguay" target="_blank">Uruguay</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">3384688</td>
+<td style="text-align:right;">1041111</td>
+<td style="text-align:right;">30.76</td>
+<td style="text-align:right;">7664</td>
+<td style="text-align:right;">0.23</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mongolia" target="_blank">Mongolia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">3517100</td>
+<td style="text-align:right;">1011496</td>
+<td style="text-align:right;">28.76</td>
+<td style="text-align:right;">2284</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Nepal" target="_blank">Nepal</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">29618118</td>
+<td style="text-align:right;">1003450</td>
+<td style="text-align:right;">3.39</td>
+<td style="text-align:right;">12031</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Belarus" target="_blank">Belarus</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">8997603</td>
+<td style="text-align:right;">994037</td>
+<td style="text-align:right;">11.05</td>
+<td style="text-align:right;">7118</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Latvia" target="_blank">Latvia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">1853559</td>
+<td style="text-align:right;">982505</td>
+<td style="text-align:right;">53.01</td>
+<td style="text-align:right;">6715</td>
+<td style="text-align:right;">0.36</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Saudi Arabia" target="_blank">Saudi Arabia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">34566328</td>
+<td style="text-align:right;">841469</td>
+<td style="text-align:right;">2.43</td>
+<td style="text-align:right;">9646</td>
+<td style="text-align:right;">0.03</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Paraguay" target="_blank">Paraguay</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">7013078</td>
+<td style="text-align:right;">837602</td>
+<td style="text-align:right;">11.94</td>
+<td style="text-align:right;">20155</td>
+<td style="text-align:right;">0.29</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Azerbaijan" target="_blank">Azerbaijan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">10397713</td>
+<td style="text-align:right;">835234</td>
+<td style="text-align:right;">8.03</td>
+<td style="text-align:right;">10400</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bahrain" target="_blank">Bahrain</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">1643332</td>
+<td style="text-align:right;">729549</td>
+<td style="text-align:right;">44.39</td>
+<td style="text-align:right;">1574</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cyprus" target="_blank">Cyprus</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">1370754</td>
+<td style="text-align:right;">681110</td>
+<td style="text-align:right;">49.69</td>
+<td style="text-align:right;">1365</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Dominican Republic" target="_blank">Dominican Republic</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">11520487</td>
+<td style="text-align:right;">675890</td>
+<td style="text-align:right;">5.87</td>
+<td style="text-align:right;">4384</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Sri Lanka" target="_blank">Sri Lanka</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">23229470</td>
+<td style="text-align:right;">672754</td>
+<td style="text-align:right;">2.9</td>
+<td style="text-align:right;">16897</td>
+<td style="text-align:right;">0.07</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Kuwait" target="_blank">Kuwait</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">5026078</td>
+<td style="text-align:right;">667158</td>
+<td style="text-align:right;">13.27</td>
+<td style="text-align:right;">2570</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Myanmar" target="_blank">Myanmar</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">54850648</td>
+<td style="text-align:right;">641873</td>
+<td style="text-align:right;">1.17</td>
+<td style="text-align:right;">19495</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Moldova" target="_blank">Moldova</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">2996106</td>
+<td style="text-align:right;">635145</td>
+<td style="text-align:right;">21.2</td>
+<td style="text-align:right;">12218</td>
+<td style="text-align:right;">0.41</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Estonia" target="_blank">Estonia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">1344232</td>
+<td style="text-align:right;">628070</td>
+<td style="text-align:right;">46.72</td>
+<td style="text-align:right;">3001</td>
+<td style="text-align:right;">0.22</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/State of Palestine" target="_blank">State of Palestine</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">5589623</td>
+<td style="text-align:right;">621008</td>
+<td style="text-align:right;">11.11</td>
+<td style="text-align:right;">5404</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Venezuela" target="_blank">Venezuela</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">28516896</td>
+<td style="text-align:right;">552695</td>
+<td style="text-align:right;">1.94</td>
+<td style="text-align:right;">5856</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Egypt" target="_blank">Egypt</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">118365995</td>
+<td style="text-align:right;">516023</td>
+<td style="text-align:right;">0.44</td>
+<td style="text-align:right;">24613</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Qatar" target="_blank">Qatar</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">3115889</td>
+<td style="text-align:right;">514524</td>
+<td style="text-align:right;">16.51</td>
+<td style="text-align:right;">690</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Libya" target="_blank">Libya</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">7458555</td>
+<td style="text-align:right;">507274</td>
+<td style="text-align:right;">6.8</td>
+<td style="text-align:right;">6437</td>
+<td style="text-align:right;">0.09</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/China" target="_blank">China</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">1416096094</td>
+<td style="text-align:right;">503302</td>
+<td style="text-align:right;">0.04</td>
+<td style="text-align:right;">5272</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Ethiopia" target="_blank">Ethiopia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">135472051</td>
+<td style="text-align:right;">501157</td>
+<td style="text-align:right;">0.37</td>
+<td style="text-align:right;">7574</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Réunion" target="_blank">Réunion</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">882405</td>
+<td style="text-align:right;">494595</td>
+<td style="text-align:right;">56.05</td>
+<td style="text-align:right;">921</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Honduras" target="_blank">Honduras</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">11005850</td>
+<td style="text-align:right;">474590</td>
+<td style="text-align:right;">4.31</td>
+<td style="text-align:right;">11165</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Armenia" target="_blank">Armenia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">2952365</td>
+<td style="text-align:right;">451831</td>
+<td style="text-align:right;">15.3</td>
+<td style="text-align:right;">8777</td>
+<td style="text-align:right;">0.3</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bosnia and Herzegovina" target="_blank">Bosnia and Herzegovina</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">3140095</td>
+<td style="text-align:right;">403615</td>
+<td style="text-align:right;">12.85</td>
+<td style="text-align:right;">16388</td>
+<td style="text-align:right;">0.52</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Oman" target="_blank">Oman</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">5494691</td>
+<td style="text-align:right;">399449</td>
+<td style="text-align:right;">7.27</td>
+<td style="text-align:right;">4628</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Luxembourg" target="_blank">Luxembourg</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">680453</td>
+<td style="text-align:right;">391232</td>
+<td style="text-align:right;">57.5</td>
+<td style="text-align:right;">1232</td>
+<td style="text-align:right;">0.18</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/North Macedonia" target="_blank">North Macedonia</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">1813791</td>
+<td style="text-align:right;">350567</td>
+<td style="text-align:right;">19.33</td>
+<td style="text-align:right;">9976</td>
+<td style="text-align:right;">0.55</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Zambia" target="_blank">Zambia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">21913874</td>
+<td style="text-align:right;">349304</td>
+<td style="text-align:right;">1.59</td>
+<td style="text-align:right;">4069</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Kenya" target="_blank">Kenya</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">57532493</td>
+<td style="text-align:right;">344130</td>
+<td style="text-align:right;">0.6</td>
+<td style="text-align:right;">5689</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Albania" target="_blank">Albania</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">2771508</td>
+<td style="text-align:right;">334863</td>
+<td style="text-align:right;">12.08</td>
+<td style="text-align:right;">3605</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Botswana" target="_blank">Botswana</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">2562122</td>
+<td style="text-align:right;">330638</td>
+<td style="text-align:right;">12.9</td>
+<td style="text-align:right;">2801</td>
+<td style="text-align:right;">0.11</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Montenegro" target="_blank">Montenegro</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">632729</td>
+<td style="text-align:right;">296542</td>
+<td style="text-align:right;">46.87</td>
+<td style="text-align:right;">2846</td>
+<td style="text-align:right;">0.45</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Algeria" target="_blank">Algeria</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">47435312</td>
+<td style="text-align:right;">272010</td>
+<td style="text-align:right;">0.57</td>
+<td style="text-align:right;">6881</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Nigeria" target="_blank">Nigeria</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">237527782</td>
+<td style="text-align:right;">267188</td>
+<td style="text-align:right;">0.11</td>
+<td style="text-align:right;">3155</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Zimbabwe" target="_blank">Zimbabwe</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">16950795</td>
+<td style="text-align:right;">266359</td>
+<td style="text-align:right;">1.57</td>
+<td style="text-align:right;">5740</td>
+<td style="text-align:right;">0.03</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Uzbekistan" target="_blank">Uzbekistan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">37053428</td>
+<td style="text-align:right;">253662</td>
+<td style="text-align:right;">0.68</td>
+<td style="text-align:right;">1637</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Afghanistan" target="_blank">Afghanistan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">43844111</td>
+<td style="text-align:right;">234174</td>
+<td style="text-align:right;">0.53</td>
+<td style="text-align:right;">7996</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mozambique" target="_blank">Mozambique</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">35631653</td>
+<td style="text-align:right;">233731</td>
+<td style="text-align:right;">0.66</td>
+<td style="text-align:right;">2250</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Martinique" target="_blank">Martinique</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">340439</td>
+<td style="text-align:right;">230354</td>
+<td style="text-align:right;">67.66</td>
+<td style="text-align:right;">1102</td>
+<td style="text-align:right;">0.32</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Laos" target="_blank">Laos</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">7873046</td>
+<td style="text-align:right;">218970</td>
+<td style="text-align:right;">2.78</td>
+<td style="text-align:right;">758</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Iceland" target="_blank">Iceland</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">398266</td>
+<td style="text-align:right;">209906</td>
+<td style="text-align:right;">52.7</td>
+<td style="text-align:right;">229</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Kyrgyzstan" target="_blank">Kyrgyzstan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">7295034</td>
+<td style="text-align:right;">206897</td>
+<td style="text-align:right;">2.84</td>
+<td style="text-align:right;">2991</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Guadeloupe" target="_blank">Guadeloupe</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">373791</td>
+<td style="text-align:right;">203235</td>
+<td style="text-align:right;">54.37</td>
+<td style="text-align:right;">1021</td>
+<td style="text-align:right;">0.27</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/El Salvador" target="_blank">El Salvador</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">6365503</td>
+<td style="text-align:right;">201855</td>
+<td style="text-align:right;">3.17</td>
+<td style="text-align:right;">4230</td>
+<td style="text-align:right;">0.07</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Trinidad and Tobago" target="_blank">Trinidad and Tobago</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">1511155</td>
+<td style="text-align:right;">191496</td>
+<td style="text-align:right;">12.67</td>
+<td style="text-align:right;">4390</td>
+<td style="text-align:right;">0.29</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Maldives" target="_blank">Maldives</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">529676</td>
+<td style="text-align:right;">186694</td>
+<td style="text-align:right;">35.25</td>
+<td style="text-align:right;">316</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Namibia" target="_blank">Namibia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">3092816</td>
+<td style="text-align:right;">172389</td>
+<td style="text-align:right;">5.57</td>
+<td style="text-align:right;">4106</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Uganda" target="_blank">Uganda</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">51384894</td>
+<td style="text-align:right;">172149</td>
+<td style="text-align:right;">0.34</td>
+<td style="text-align:right;">3632</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Ghana" target="_blank">Ghana</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">35064272</td>
+<td style="text-align:right;">171889</td>
+<td style="text-align:right;">0.49</td>
+<td style="text-align:right;">1462</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Jamaica" target="_blank">Jamaica</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">2837077</td>
+<td style="text-align:right;">156869</td>
+<td style="text-align:right;">5.53</td>
+<td style="text-align:right;">3756</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cambodia" target="_blank">Cambodia</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">17847982</td>
+<td style="text-align:right;">139103</td>
+<td style="text-align:right;">0.78</td>
+<td style="text-align:right;">3056</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Rwanda" target="_blank">Rwanda</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">14569341</td>
+<td style="text-align:right;">133518</td>
+<td style="text-align:right;">0.92</td>
+<td style="text-align:right;">1468</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cameroon" target="_blank">Cameroon</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">29879337</td>
+<td style="text-align:right;">125379</td>
+<td style="text-align:right;">0.42</td>
+<td style="text-align:right;">1974</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Malta" target="_blank">Malta</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">545405</td>
+<td style="text-align:right;">121420</td>
+<td style="text-align:right;">22.26</td>
+<td style="text-align:right;">885</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Barbados" target="_blank">Barbados</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">282623</td>
+<td style="text-align:right;">110578</td>
+<td style="text-align:right;">39.13</td>
+<td style="text-align:right;">648</td>
+<td style="text-align:right;">0.23</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Angola" target="_blank">Angola</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">39040039</td>
+<td style="text-align:right;">107327</td>
+<td style="text-align:right;">0.27</td>
+<td style="text-align:right;">1937</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/DR Congo" target="_blank">DR Congo</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">112832473</td>
+<td style="text-align:right;">99338</td>
+<td style="text-align:right;">0.09</td>
+<td style="text-align:right;">1468</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/French Guiana" target="_blank">French Guiana</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">313666</td>
+<td style="text-align:right;">98041</td>
+<td style="text-align:right;">31.26</td>
+<td style="text-align:right;">420</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Malawi" target="_blank">Malawi</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">22216120</td>
+<td style="text-align:right;">89535</td>
+<td style="text-align:right;">0.4</td>
+<td style="text-align:right;">2686</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Senegal" target="_blank">Senegal</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">18931966</td>
+<td style="text-align:right;">89053</td>
+<td style="text-align:right;">0.47</td>
+<td style="text-align:right;">1971</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Côte d'Ivoire" target="_blank">Côte d'Ivoire</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">32711547</td>
+<td style="text-align:right;">88384</td>
+<td style="text-align:right;">0.27</td>
+<td style="text-align:right;">835</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Suriname" target="_blank">Suriname</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">639850</td>
+<td style="text-align:right;">82588</td>
+<td style="text-align:right;">12.91</td>
+<td style="text-align:right;">1408</td>
+<td style="text-align:right;">0.22</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/New Caledonia" target="_blank">New Caledonia</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">295333</td>
+<td style="text-align:right;">80064</td>
+<td style="text-align:right;">27.11</td>
+<td style="text-align:right;">314</td>
+<td style="text-align:right;">0.11</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/French Polynesia" target="_blank">French Polynesia</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">282465</td>
+<td style="text-align:right;">79254</td>
+<td style="text-align:right;">28.06</td>
+<td style="text-align:right;">650</td>
+<td style="text-align:right;">0.23</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Eswatini" target="_blank">Eswatini</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">1256174</td>
+<td style="text-align:right;">75191</td>
+<td style="text-align:right;">5.99</td>
+<td style="text-align:right;">1427</td>
+<td style="text-align:right;">0.11</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Guyana" target="_blank">Guyana</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">835986</td>
+<td style="text-align:right;">74137</td>
+<td style="text-align:right;">8.87</td>
+<td style="text-align:right;">1300</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Belize" target="_blank">Belize</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">422924</td>
+<td style="text-align:right;">71409</td>
+<td style="text-align:right;">16.88</td>
+<td style="text-align:right;">688</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Fiji" target="_blank">Fiji</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">933154</td>
+<td style="text-align:right;">69117</td>
+<td style="text-align:right;">7.41</td>
+<td style="text-align:right;">885</td>
+<td style="text-align:right;">0.09</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Madagascar" target="_blank">Madagascar</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">32740678</td>
+<td style="text-align:right;">68486</td>
+<td style="text-align:right;">0.21</td>
+<td style="text-align:right;">1426</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cabo Verde" target="_blank">Cabo Verde</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">527326</td>
+<td style="text-align:right;">64477</td>
+<td style="text-align:right;">12.23</td>
+<td style="text-align:right;">417</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Sudan" target="_blank">Sudan</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">51662147</td>
+<td style="text-align:right;">63993</td>
+<td style="text-align:right;">0.12</td>
+<td style="text-align:right;">5046</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mauritania" target="_blank">Mauritania</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">5315065</td>
+<td style="text-align:right;">63848</td>
+<td style="text-align:right;">1.2</td>
+<td style="text-align:right;">997</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bhutan" target="_blank">Bhutan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">796682</td>
+<td style="text-align:right;">62697</td>
+<td style="text-align:right;">7.87</td>
+<td style="text-align:right;">21</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Syria" target="_blank">Syria</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">25620427</td>
+<td style="text-align:right;">57743</td>
+<td style="text-align:right;">0.23</td>
+<td style="text-align:right;">3165</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Burundi" target="_blank">Burundi</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">14390003</td>
+<td style="text-align:right;">54721</td>
+<td style="text-align:right;">0.38</td>
+<td style="text-align:right;">38</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Seychelles" target="_blank">Seychelles</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">132779</td>
+<td style="text-align:right;">51220</td>
+<td style="text-align:right;">38.58</td>
+<td style="text-align:right;">172</td>
+<td style="text-align:right;">0.13</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Gabon" target="_blank">Gabon</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">2593130</td>
+<td style="text-align:right;">49051</td>
+<td style="text-align:right;">1.89</td>
+<td style="text-align:right;">307</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Andorra" target="_blank">Andorra</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">82904</td>
+<td style="text-align:right;">48015</td>
+<td style="text-align:right;">57.92</td>
+<td style="text-align:right;">165</td>
+<td style="text-align:right;">0.2</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Papua New Guinea" target="_blank">Papua New Guinea</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">10762817</td>
+<td style="text-align:right;">46864</td>
+<td style="text-align:right;">0.44</td>
+<td style="text-align:right;">670</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Curaçao" target="_blank">Curaçao</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">185487</td>
+<td style="text-align:right;">45986</td>
+<td style="text-align:right;">24.79</td>
+<td style="text-align:right;">295</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Aruba" target="_blank">Aruba</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">108147</td>
+<td style="text-align:right;">44224</td>
+<td style="text-align:right;">40.89</td>
+<td style="text-align:right;">292</td>
+<td style="text-align:right;">0.27</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Tanzania" target="_blank">Tanzania</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">70545865</td>
+<td style="text-align:right;">43223</td>
+<td style="text-align:right;">0.06</td>
+<td style="text-align:right;">846</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mauritius" target="_blank">Mauritius</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">1268280</td>
+<td style="text-align:right;">43025</td>
+<td style="text-align:right;">3.39</td>
+<td style="text-align:right;">1051</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mayotte" target="_blank">Mayotte</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">337011</td>
+<td style="text-align:right;">42027</td>
+<td style="text-align:right;">12.47</td>
+<td style="text-align:right;">188</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Togo" target="_blank">Togo</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">9721608</td>
+<td style="text-align:right;">39572</td>
+<td style="text-align:right;">0.41</td>
+<td style="text-align:right;">290</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Guinea" target="_blank">Guinea</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">15099727</td>
+<td style="text-align:right;">38572</td>
+<td style="text-align:right;">0.26</td>
+<td style="text-align:right;">468</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bahamas" target="_blank">Bahamas</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">403033</td>
+<td style="text-align:right;">38084</td>
+<td style="text-align:right;">9.45</td>
+<td style="text-align:right;">844</td>
+<td style="text-align:right;">0.21</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Isle of Man" target="_blank">Isle of Man</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">84118</td>
+<td style="text-align:right;">38008</td>
+<td style="text-align:right;">45.18</td>
+<td style="text-align:right;">116</td>
+<td style="text-align:right;">0.14</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Lesotho" target="_blank">Lesotho</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">2363325</td>
+<td style="text-align:right;">36138</td>
+<td style="text-align:right;">1.53</td>
+<td style="text-align:right;">723</td>
+<td style="text-align:right;">0.03</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Haiti" target="_blank">Haiti</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">11906095</td>
+<td style="text-align:right;">34667</td>
+<td style="text-align:right;">0.29</td>
+<td style="text-align:right;">860</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Faeroe Islands" target="_blank">Faeroe Islands</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">56002</td>
+<td style="text-align:right;">34658</td>
+<td style="text-align:right;">61.89</td>
+<td style="text-align:right;">28</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Mali" target="_blank">Mali</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">25198821</td>
+<td style="text-align:right;">33164</td>
+<td style="text-align:right;">0.13</td>
+<td style="text-align:right;">743</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cayman Islands" target="_blank">Cayman Islands</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">75844</td>
+<td style="text-align:right;">31472</td>
+<td style="text-align:right;">41.5</td>
+<td style="text-align:right;">37</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Saint Lucia" target="_blank">Saint Lucia</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">180149</td>
+<td style="text-align:right;">30215</td>
+<td style="text-align:right;">16.77</td>
+<td style="text-align:right;">410</td>
+<td style="text-align:right;">0.23</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Benin" target="_blank">Benin</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">14814460</td>
+<td style="text-align:right;">28036</td>
+<td style="text-align:right;">0.19</td>
+<td style="text-align:right;">163</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Macao" target="_blank">Macao</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">722007</td>
+<td style="text-align:right;">27673</td>
+<td style="text-align:right;">3.83</td>
+<td style="text-align:right;">123</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Somalia" target="_blank">Somalia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">19654739</td>
+<td style="text-align:right;">27334</td>
+<td style="text-align:right;">0.14</td>
+<td style="text-align:right;">1361</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Micronesia" target="_blank">Micronesia</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">113683</td>
+<td style="text-align:right;">26547</td>
+<td style="text-align:right;">23.35</td>
+<td style="text-align:right;">65</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/San Marino" target="_blank">San Marino</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">33572</td>
+<td style="text-align:right;">26185</td>
+<td style="text-align:right;">78.0</td>
+<td style="text-align:right;">128</td>
+<td style="text-align:right;">0.38</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Solomon Islands" target="_blank">Solomon Islands</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">838645</td>
+<td style="text-align:right;">25954</td>
+<td style="text-align:right;">3.09</td>
+<td style="text-align:right;">199</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Congo" target="_blank">Congo</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">6484437</td>
+<td style="text-align:right;">25375</td>
+<td style="text-align:right;">0.39</td>
+<td style="text-align:right;">386</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Timor-Leste" target="_blank">Timor-Leste</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">1418517</td>
+<td style="text-align:right;">23460</td>
+<td style="text-align:right;">1.65</td>
+<td style="text-align:right;">138</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Burkina Faso" target="_blank">Burkina Faso</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">24074580</td>
+<td style="text-align:right;">22114</td>
+<td style="text-align:right;">0.09</td>
+<td style="text-align:right;">400</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Liechtenstein" target="_blank">Liechtenstein</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">40128</td>
+<td style="text-align:right;">21574</td>
+<td style="text-align:right;">53.76</td>
+<td style="text-align:right;">94</td>
+<td style="text-align:right;">0.23</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Gibraltar" target="_blank">Gibraltar</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">40126</td>
+<td style="text-align:right;">20550</td>
+<td style="text-align:right;">51.21</td>
+<td style="text-align:right;">113</td>
+<td style="text-align:right;">0.28</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Grenada" target="_blank">Grenada</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">117303</td>
+<td style="text-align:right;">19693</td>
+<td style="text-align:right;">16.79</td>
+<td style="text-align:right;">238</td>
+<td style="text-align:right;">0.2</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Bermuda" target="_blank">Bermuda</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">64555</td>
+<td style="text-align:right;">18860</td>
+<td style="text-align:right;">29.22</td>
+<td style="text-align:right;">165</td>
+<td style="text-align:right;">0.26</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/South Sudan" target="_blank">South Sudan</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">12188788</td>
+<td style="text-align:right;">18819</td>
+<td style="text-align:right;">0.15</td>
+<td style="text-align:right;">147</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Nicaragua" target="_blank">Nicaragua</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">7007502</td>
+<td style="text-align:right;">18491</td>
+<td style="text-align:right;">0.26</td>
+<td style="text-align:right;">225</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Tajikistan" target="_blank">Tajikistan</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">10786734</td>
+<td style="text-align:right;">17786</td>
+<td style="text-align:right;">0.16</td>
+<td style="text-align:right;">125</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Equatorial Guinea" target="_blank">Equatorial Guinea</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">1938431</td>
+<td style="text-align:right;">17229</td>
+<td style="text-align:right;">0.89</td>
+<td style="text-align:right;">183</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Monaco" target="_blank">Monaco</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">38341</td>
+<td style="text-align:right;">17181</td>
+<td style="text-align:right;">44.81</td>
+<td style="text-align:right;">67</td>
+<td style="text-align:right;">0.17</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Samoa" target="_blank">Samoa</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">219306</td>
+<td style="text-align:right;">17006</td>
+<td style="text-align:right;">7.75</td>
+<td style="text-align:right;">31</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Tonga" target="_blank">Tonga</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">103742</td>
+<td style="text-align:right;">16950</td>
+<td style="text-align:right;">16.34</td>
+<td style="text-align:right;">13</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Marshall Islands" target="_blank">Marshall Islands</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">36282</td>
+<td style="text-align:right;">16138</td>
+<td style="text-align:right;">44.48</td>
+<td style="text-align:right;">17</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Dominica" target="_blank">Dominica</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">65871</td>
+<td style="text-align:right;">16038</td>
+<td style="text-align:right;">24.35</td>
+<td style="text-align:right;">74</td>
+<td style="text-align:right;">0.11</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Djibouti" target="_blank">Djibouti</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">1184076</td>
+<td style="text-align:right;">15690</td>
+<td style="text-align:right;">1.33</td>
+<td style="text-align:right;">189</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Central African Republic" target="_blank">Central African Republic</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">5513282</td>
+<td style="text-align:right;">15440</td>
+<td style="text-align:right;">0.28</td>
+<td style="text-align:right;">113</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Gambia" target="_blank">Gambia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">2822093</td>
+<td style="text-align:right;">12626</td>
+<td style="text-align:right;">0.45</td>
+<td style="text-align:right;">372</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Vanuatu" target="_blank">Vanuatu</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">335169</td>
+<td style="text-align:right;">12019</td>
+<td style="text-align:right;">3.59</td>
+<td style="text-align:right;">14</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Greenland" target="_blank">Greenland</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">55745</td>
+<td style="text-align:right;">11971</td>
+<td style="text-align:right;">21.47</td>
+<td style="text-align:right;">21</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Yemen" target="_blank">Yemen</a>
+</td>
+<td style="text-align:left;">Asia</td>
+<td style="text-align:right;">41773878</td>
+<td style="text-align:right;">11945</td>
+<td style="text-align:right;">0.03</td>
+<td style="text-align:right;">2159</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Caribbean Netherlands" target="_blank">Caribbean Netherlands</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">31338</td>
+<td style="text-align:right;">11682</td>
+<td style="text-align:right;">37.28</td>
+<td style="text-align:right;">38</td>
+<td style="text-align:right;">0.12</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Sint Maarten" target="_blank">Sint Maarten</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">43923</td>
+<td style="text-align:right;">11051</td>
+<td style="text-align:right;">25.16</td>
+<td style="text-align:right;">92</td>
+<td style="text-align:right;">0.21</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Eritrea" target="_blank">Eritrea</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">3607003</td>
+<td style="text-align:right;">10189</td>
+<td style="text-align:right;">0.28</td>
+<td style="text-align:right;">103</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Niger" target="_blank">Niger</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">27917831</td>
+<td style="text-align:right;">9931</td>
+<td style="text-align:right;">0.04</td>
+<td style="text-align:right;">312</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/St. Vincent & Grenadines" target="_blank">St. Vincent & Grenadines</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">99924</td>
+<td style="text-align:right;">9674</td>
+<td style="text-align:right;">9.68</td>
+<td style="text-align:right;">124</td>
+<td style="text-align:right;">0.12</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Guinea-Bissau" target="_blank">Guinea-Bissau</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">2249515</td>
+<td style="text-align:right;">9614</td>
+<td style="text-align:right;">0.43</td>
+<td style="text-align:right;">177</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Comoros" target="_blank">Comoros</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">882847</td>
+<td style="text-align:right;">9109</td>
+<td style="text-align:right;">1.03</td>
+<td style="text-align:right;">161</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Antigua and Barbuda" target="_blank">Antigua and Barbuda</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">94209</td>
+<td style="text-align:right;">9106</td>
+<td style="text-align:right;">9.67</td>
+<td style="text-align:right;">146</td>
+<td style="text-align:right;">0.15</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Liberia" target="_blank">Liberia</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">5731206</td>
+<td style="text-align:right;">8090</td>
+<td style="text-align:right;">0.14</td>
+<td style="text-align:right;">295</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Sierra Leone" target="_blank">Sierra Leone</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">8819794</td>
+<td style="text-align:right;">7779</td>
+<td style="text-align:right;">0.09</td>
+<td style="text-align:right;">126</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Chad" target="_blank">Chad</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">21003705</td>
+<td style="text-align:right;">7701</td>
+<td style="text-align:right;">0.04</td>
+<td style="text-align:right;">194</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/British Virgin Islands" target="_blank">British Virgin Islands</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">39732</td>
+<td style="text-align:right;">7392</td>
+<td style="text-align:right;">18.6</td>
+<td style="text-align:right;">64</td>
+<td style="text-align:right;">0.16</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Cook Islands" target="_blank">Cook Islands</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">13263</td>
+<td style="text-align:right;">7203</td>
+<td style="text-align:right;">54.31</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Sao Tome & Principe" target="_blank">Sao Tome & Principe</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">240254</td>
+<td style="text-align:right;">6778</td>
+<td style="text-align:right;">2.82</td>
+<td style="text-align:right;">80</td>
+<td style="text-align:right;">0.03</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Turks and Caicos" target="_blank">Turks and Caicos</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">46855</td>
+<td style="text-align:right;">6752</td>
+<td style="text-align:right;">14.41</td>
+<td style="text-align:right;">40</td>
+<td style="text-align:right;">0.09</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Saint Kitts & Nevis" target="_blank">Saint Kitts & Nevis</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">46922</td>
+<td style="text-align:right;">6607</td>
+<td style="text-align:right;">14.08</td>
+<td style="text-align:right;">48</td>
+<td style="text-align:right;">0.1</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Palau" target="_blank">Palau</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">17663</td>
+<td style="text-align:right;">6290</td>
+<td style="text-align:right;">35.61</td>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">0.06</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Saint Barthelemy" target="_blank">Saint Barthelemy</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">11414</td>
+<td style="text-align:right;">5507</td>
+<td style="text-align:right;">48.25</td>
+<td style="text-align:right;">6</td>
+<td style="text-align:right;">0.05</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Nauru" target="_blank">Nauru</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">12025</td>
+<td style="text-align:right;">5393</td>
+<td style="text-align:right;">44.85</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Kiribati" target="_blank">Kiribati</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">136488</td>
+<td style="text-align:right;">5085</td>
+<td style="text-align:right;">3.73</td>
+<td style="text-align:right;">24</td>
+<td style="text-align:right;">0.02</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Anguilla" target="_blank">Anguilla</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">14728</td>
+<td style="text-align:right;">3904</td>
+<td style="text-align:right;">26.51</td>
+<td style="text-align:right;">12</td>
+<td style="text-align:right;">0.08</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Wallis & Futuna" target="_blank">Wallis & Futuna</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">11194</td>
+<td style="text-align:right;">3550</td>
+<td style="text-align:right;">31.71</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0.07</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Saint Pierre & Miquelon" target="_blank">Saint Pierre & Miquelon</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">5574</td>
+<td style="text-align:right;">3452</td>
+<td style="text-align:right;">61.93</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">0.04</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Tuvalu" target="_blank">Tuvalu</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">9492</td>
+<td style="text-align:right;">2943</td>
+<td style="text-align:right;">31.01</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.01</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Saint Helena" target="_blank">Saint Helena</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">5197</td>
+<td style="text-align:right;">2166</td>
+<td style="text-align:right;">41.68</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Falkland Islands" target="_blank">Falkland Islands</a>
+</td>
+<td style="text-align:left;">South America</td>
+<td style="text-align:right;">3469</td>
+<td style="text-align:right;">1930</td>
+<td style="text-align:right;">55.64</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Montserrat" target="_blank">Montserrat</a>
+</td>
+<td style="text-align:left;">North America</td>
+<td style="text-align:right;">4359</td>
+<td style="text-align:right;">1403</td>
+<td style="text-align:right;">32.19</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">0.18</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Niue" target="_blank">Niue</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">1821</td>
+<td style="text-align:right;">1059</td>
+<td style="text-align:right;">58.15</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Tokelau" target="_blank">Tokelau</a>
+</td>
+<td style="text-align:left;">Australia/Oceania</td>
+<td style="text-align:right;">2608</td>
+<td style="text-align:right;">80</td>
+<td style="text-align:right;">3.07</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Holy See" target="_blank">Holy See</a>
+</td>
+<td style="text-align:left;">Europe</td>
+<td style="text-align:right;">501</td>
+<td style="text-align:right;">29</td>
+<td style="text-align:right;">5.79</td>
+<td style="text-align:right;">0</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+<tr><td style="text-align:left;"><a href="https://en.wikipedia.org/wiki/Western Sahara" target="_blank">Western Sahara</a>
+</td>
+<td style="text-align:left;">Africa</td>
+<td style="text-align:right;">600904</td>
+<td style="text-align:right;">10</td>
+<td style="text-align:right;">0.0</td>
+<td style="text-align:right;">1</td>
+<td style="text-align:right;">0.0</td>
+</tr>
+</table>
+<center><h6>&copy;2024 • All Rights Reserved • Generated on Jul. 10, 2025 15:44 PM</h6>
+</center>
+</body>
+</html>
